@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    @apply leading-[100%];
+  }
+  button {
+    @apply leading-[100%];
+  }
+  .container {
+    @apply !max-w-screen-4xl;
+  }
+  .no_scroll_bar::-webkit-scrollbar {
+    width: 0;
+  }
+  .scroll_bar {
+    scrollbar-width: 3px;
+    scrollbar-color: #c8c8be #c8c8be;
+  }
+  .scroll_bar::-webkit-scrollbar {
+    width: 0;
+  }
+  .scroll_bar::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+  }
+  .scroll_bar::-webkit-scrollbar-thumb {
+    background-color: #c8c8be;
+    border-radius: 20px;
+  }
+
+  body {
+    @apply font-primary;
+    /* background-color: #ffffff; */
+  }
+  .input_without_arrow::-webkit-outer-spin-button,
+  .input_without_arrow::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .input_without_arrow[type="number"] {
+    -moz-appearance: textfield;
+  }
+  .container-reset {
+    @apply p-0 w-full !max-w-none;
+  }
+
+  input[type="password"] {
+    font-family: sans-serif;
+  }
+}
