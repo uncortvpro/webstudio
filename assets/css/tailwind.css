@@ -32,21 +32,25 @@
   }
 
   body {
-    @apply font-primary;
-    /* background-color: #ffffff; */
+    @apply bg-black font-primary;
   }
   .input_without_arrow::-webkit-outer-spin-button,
   .input_without_arrow::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
-  .input_without_arrow[type="number"] {
+  .input_without_arrow[type='number'] {
     -moz-appearance: textfield;
   }
   .container-reset {
-    @apply p-0 w-full !max-w-none;
+    @apply w-full !max-w-none p-0;
   }
 
-  input[type="password"] {
+  input[type='password'] {
     font-family: sans-serif;
+  }
+
+  .bg_blur_dark {
+    background-color: rgba(1, 1, 1, 0.6);
+    backdrop-filter: blur(10px);
   }
 }
