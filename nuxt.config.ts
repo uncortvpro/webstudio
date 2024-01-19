@@ -6,11 +6,24 @@ export default defineNuxtConfig({
       url: process.env.NUXT_URL,
     },
   },
-  modules: ['@nuxt/ui', 'nuxt-svgo', '@pinia/nuxt', '@vueuse/nuxt'],
+  modules: ['@nuxt/ui', 'nuxt-svgo', '@pinia/nuxt', '@vueuse/nuxt', 'nuxt-swiper'],
   ssr: false,
   css: ['~/assets/css/fonts.css'],
   alias: {
     '@img': './assets/img',
+  },
+  swiper: {
+    modules: [
+      // 'navigation',
+      // 'pagination',
+      // 'thumbs',
+      // 'free-mode',
+      // 'controller',
+      // 'autoplay',
+      // 'effect-creative',
+      // 'scrollbar',
+      // 'grid',
+    ],
   },
   svgo: {
     autoImportPath: './assets/img/svg/',

@@ -12,7 +12,7 @@
         class="relative z-[60] lg:hidden"
         @click="isActive = !isActive"
       />
-      <PagesMenuMobile v-show="isActive" class="lg:hidden" />
+      <PagesMenuMobile :isActive="isActive" class="lg:hidden" />
     </div>
   </header>
 </template>
