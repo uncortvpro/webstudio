@@ -1,5 +1,11 @@
 <script setup lang="ts">
-  const isActive = ref(false);
+  const isActive = ref<boolean>(false);
+
+  const changeVisibilityMenu = (value: boolean) => {
+    isActive.value = value;
+  };
+
+  provide('changeVisibilityMenu', changeVisibilityMenu);
 </script>
 
 <template>
@@ -12,7 +18,11 @@
         class="relative z-[60] lg:hidden"
         @click="isActive = !isActive"
       />
-      <PagesMenuMobile :isActive="isActive" class="lg:hidden" />
+      <PagesMenuMobile
+        :isActive="isActive"
+        class="lg:hidden"
+        @changeVisibilityMenu="changeVisibilityMenu"
+      />
     </div>
   </header>
 </template>
