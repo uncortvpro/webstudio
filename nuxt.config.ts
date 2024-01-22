@@ -19,10 +19,10 @@ export default defineNuxtConfig({
       // 'thumbs',
       // 'free-mode',
       // 'controller',
-      // 'autoplay',
+      'autoplay',
       // 'effect-creative',
       // 'scrollbar',
-      // 'grid',
+      'grid',
     ],
   },
   svgo: {

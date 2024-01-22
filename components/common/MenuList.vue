@@ -3,13 +3,13 @@
 <template>
   <ul>
     <li class="menu_item">
-      <UiButtonOpacity to="/">services</UiButtonOpacity>
+      <UiButtonOpacity to="#services">services</UiButtonOpacity>
     </li>
     <li class="menu_item">
-      <UiButtonOpacity to="/">portfolio</UiButtonOpacity>
+      <UiButtonOpacity to="#best_projects">portfolio</UiButtonOpacity>
     </li>
     <li class="menu_item">
-      <UiButtonOpacity to="/">contacts</UiButtonOpacity>
+      <UiButtonOpacity to="#contact">contacts</UiButtonOpacity>
     </li>
   </ul>
 </template>

@@ -6,6 +6,9 @@
   * {
     @apply leading-[100%];
   }
+  html {
+    scroll-behavior: smooth;
+  }
   button {
     @apply leading-[100%];
   }
@@ -52,5 +55,25 @@
   .bg_blur_dark {
     background-color: rgba(1, 1, 1, 0.6);
     backdrop-filter: blur(10px);
+  }
+
+  .input_primary_style {
+    @apply input_primary_text input_primary_bg input_primary_padding_x input_primary_height w-full rounded-[50px]   text-white placeholder:lowercase placeholder:text-white focus:outline-none;
+  }
+
+  .input_primary_bg {
+    @apply bg-[#343899];
+  }
+
+  .input_primary_text {
+    @apply text-[12px] md:text-[16px] xl:text-[25px];
+  }
+
+  .input_primary_height {
+    @apply h-[34px] md:h-[54px] xl:h-[80px];
+  }
+
+  .input_primary_padding_x {
+    @apply !px-[15px] md:!px-[25px] xl:!px-[40px];
   }
 }

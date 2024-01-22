@@ -31,10 +31,9 @@
 </script>
 
 <template>
-  <UiSection class="relative bg-black">
+  <UiSection class="relative">
     <template #title> best projects </template>
     <template #content>
-      <div class="gradient_bg absolute left-[0] top-[0] h-[calc(100%+500px)] w-full" />
       <div class="relative z-10">
         <Swiper
           class="swiper_main w-full"
@@ -100,11 +99,4 @@
   </UiSection>
 </template>
 
-<style scoped>
-  .gradient_bg {
-    background: radial-gradient(at 78% 71%, #d63fff -29%, transparent 45%),
-      radial-gradient(at 64% 57%, #000aff -1%, transparent 38%),
-      radial-gradient(at 82% 48%, #fff501 -29%, transparent 38%);
-    opacity: 0.5;
-  }
-</style>
+<style scoped></style>
