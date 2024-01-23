@@ -17,10 +17,12 @@
           :class="cn('products_swiper !overflow-x-visible', {})"
           :modules="[SwiperAutoplay, SwiperGrid]"
           :spaceBetween="30"
-          :slidesPerView="1"
+          :centered-slides-bounds="true"
+          :centered-slides="true"
+          :slidesPerView="1.2"
           :breakpoints="{
             375: {
-              slidesPerView: 1,
+              slidesPerView: 1.2,
             },
             768: {
               slidesPerView: 2,
