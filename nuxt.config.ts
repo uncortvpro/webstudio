@@ -36,7 +36,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Temlate Nuxt 3',
+      title: 'Ocean Script',
       meta: [
         {
           name: 'viewport',
