@@ -1,8 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  const contactSection = ref();
+  const isShowSection = ref<boolean>(false);
+  useAnimateSection(contactSection, isShowSection);
+</script>
 
 <template>
-  <div>
-    <div class="container flex flex-col gap-[70px] xl:flex-row xl:items-center xl:justify-between">
+  <div ref="contactSection" :class="{ min_height_animate_sec: !isShowSection }">
+    <div
+      v-if="isShowSection"
+      class="duration_show_section container flex animate-fade-up flex-col gap-[70px] xl:flex-row xl:items-center xl:justify-between"
+    >
       <div class="relative self-start xl:self-center">
         <SvgoCustomVector
           class="absolute left-[50%] top-[50%] !h-[200%] !w-auto translate-x-[-50%] translate-y-[-50%] stroke-blue text-transparent"

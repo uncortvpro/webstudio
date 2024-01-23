@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  // import { useElementVisibility } from '@vueuse/core';
+
   const tabs = [
     {
       id: 1,
@@ -24,6 +26,9 @@
 
   const activeTadId = ref(1);
   const activeTab = computed(() => tabs.find((el) => el.id === activeTadId.value));
+  const bestProjectsSection = ref();
+  const isShowSection = ref<boolean>(false);
+  useAnimateSection(bestProjectsSection, isShowSection);
 
   const changeTab = (tabId: number) => {
     activeTadId.value = tabId;
@@ -31,72 +36,74 @@
 </script>
 
 <template>
-  <UiSection class="relative">
-    <template #title> best projects </template>
-    <template #content>
-      <div class="relative z-10">
-        <Swiper
-          class="swiper_main w-full"
-          :slides-per-view="'auto'"
-          :spaceBetween="10"
-          :breakpoints="{
-            375: {
-              spaceBetween: 10,
-            },
-            768: {
-              spaceBetween: 15,
-            },
-            1300: {
-              spaceBetween: 30,
-            },
-          }"
-        >
-          <SwiperSlide
-            v-for="(tab, index) in tabs"
-            :key="index"
-            class="!w-fit overflow-hidden rounded-[5px]"
+  <div ref="bestProjectsSection" :class="{ min_height_animate_sec: !isShowSection }">
+    <UiSection v-show="isShowSection" class="duration_show_section relative animate-fade-up">
+      <template #title> best projects </template>
+      <template #content>
+        <div class="relative z-10">
+          <Swiper
+            class="swiper_main w-full"
+            :slides-per-view="'auto'"
+            :spaceBetween="10"
+            :breakpoints="{
+              375: {
+                spaceBetween: 10,
+              },
+              768: {
+                spaceBetween: 15,
+              },
+              1300: {
+                spaceBetween: 30,
+              },
+            }"
           >
-            <UiButton
-              :class="
-                cn(
-                  'w-fit rounded-[50px] border border-blue px-[16px] py-[5px] text-[10px] lowercase text-white duration-200 md:px-[22px] md:py-[10px] md:text-[16px] xl:border-[2px] xl:px-[43px] xl:py-[11px] xl:text-[25px]',
-                  {
-                    'bg-blue': activeTadId === tab.id,
-                  }
-                )
-              "
-              @click="changeTab(tab.id)"
-              >{{ tab.label }}</UiButton
+            <SwiperSlide
+              v-for="(tab, index) in tabs"
+              :key="index"
+              class="!w-fit overflow-hidden rounded-[5px]"
             >
-          </SwiperSlide>
-        </Swiper>
-        <div
-          class="mt-[15px] grid auto-rows-[minmax(0,30%)] grid-cols-1 gap-[10px] text-white md:mt-[20px] md:auto-rows-[minmax(0,20vw)] md:grid-cols-12 md:gap-[13px] xl:mt-[38px] xl:gap-[30px] 4xl:auto-rows-[minmax(0,550px)]"
-        >
+              <UiButton
+                :class="
+                  cn(
+                    'w-fit rounded-[50px] border border-blue px-[16px] py-[5px] text-[10px] lowercase text-white duration-200 md:px-[22px] md:py-[10px] md:text-[16px] xl:border-[2px] xl:px-[43px] xl:py-[11px] xl:text-[25px]',
+                    {
+                      'bg-blue': activeTadId === tab.id,
+                    }
+                  )
+                "
+                @click="changeTab(tab.id)"
+                >{{ tab.label }}</UiButton
+              >
+            </SwiperSlide>
+          </Swiper>
           <div
-            class="overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]"
+            class="mt-[15px] grid auto-rows-[minmax(0,30%)] grid-cols-1 gap-[10px] text-white md:mt-[20px] md:auto-rows-[minmax(0,20vw)] md:grid-cols-12 md:gap-[13px] xl:mt-[38px] xl:gap-[30px] 4xl:auto-rows-[minmax(0,550px)]"
           >
-            <img class="size-full object-cover" src="@img/olimpia_crm.png" alt="" />
-          </div>
-          <div
-            class="overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]"
-          >
-            <img class="size-full object-cover" src="@img/ukrainemart.png" alt="" />
-          </div>
-          <div
-            class="overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]"
-          >
-            <img class="size-full object-cover" src="@img/size_crm.png" alt="" />
-          </div>
-          <div
-            class="overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]"
-          >
-            <img class="size-full object-cover" src="@img/kuzka_shop.png" alt="" />
+            <div
+              class="overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]"
+            >
+              <img class="size-full object-cover" src="@img/olimpia_crm.png" alt="" />
+            </div>
+            <div
+              class="overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]"
+            >
+              <img class="size-full object-cover" src="@img/ukrainemart.png" alt="" />
+            </div>
+            <div
+              class="overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]"
+            >
+              <img class="size-full object-cover" src="@img/size_crm.png" alt="" />
+            </div>
+            <div
+              class="overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]"
+            >
+              <img class="size-full object-cover" src="@img/kuzka_shop.png" alt="" />
+            </div>
           </div>
         </div>
-      </div>
-    </template>
-  </UiSection>
+      </template>
+    </UiSection>
+  </div>
 </template>
 
 <style scoped></style>

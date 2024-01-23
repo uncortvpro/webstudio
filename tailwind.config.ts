@@ -33,6 +33,7 @@ export default <Partial<Config>>{
     fontFamily: {
       primary: ['poppins', 'sans-serif'],
       secondary: ['orbitron', 'sans-serif'],
+      logo: ['stick no bills', 'sans-serif'],
     },
     extend: {
       gridTemplateColumns: {},
