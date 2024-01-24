@@ -2,29 +2,81 @@
   // import { useElementVisibility } from '@vueuse/core';
 
   const tabs = [
-    {
-      id: 1,
-      label: 'all projects',
-      content: 'This is the content shown for Tab1',
-    },
+    // {
+    //   id: 1,
+    //   label: 'all projects',
+    //   projects: [
+    //     {
+    //       image: '/img/olimpia_crm.png',
+    //     },
+    //     {
+    //       image: '/img/olimpia_crm.png',
+    //     },
+    //     {
+    //       image: '/img/olimpia_crm.png',
+    //     },
+    //     {
+    //       image: '/img/olimpia_crm.png',
+    //     },
+    //   ],
+    // },
     {
       id: 2,
       label: 'Web-development',
-      content: 'And, this is the content for Tab2',
+      projects: [
+        {
+          image: '/img/olimpia_crm.png',
+        },
+        {
+          image: '/img/ukrainemart.png',
+        },
+        {
+          image: '/img/size_crm.png',
+        },
+        {
+          image: '/img/kuzka_shop.png',
+        },
+      ],
     },
     {
       id: 3,
       label: 'Ux/ui design',
-      content: 'Finally, this is the content for Tab3',
+      projects: [
+        {
+          image: '/img/LogicGov.png',
+        },
+        {
+          image: '/img/Enterprice_gpt.png',
+        },
+        {
+          image: '/img/kwiga.png',
+        },
+        {
+          image: '/img/CryptoEx.png',
+        },
+      ],
     },
     {
       id: 4,
       label: 'presentation design',
-      content: 'Finally, this is the content for Tab3',
+      projects: [
+        {
+          image: '/img/olimpia_crm.png',
+        },
+        {
+          image: '/img/ukrainemart.png',
+        },
+        {
+          image: '/img/size_crm.png',
+        },
+        {
+          image: '/img/kuzka_shop.png',
+        },
+      ],
     },
   ];
 
-  const activeTadId = ref(1);
+  const activeTadId = ref(2);
   const activeTab = computed(() => tabs.find((el) => el.id === activeTadId.value));
   const bestProjectsSection = ref();
   const isShowSection = ref<boolean>(false);
@@ -77,27 +129,27 @@
             </SwiperSlide>
           </Swiper>
           <div
-            class="mt-[15px] grid auto-rows-[minmax(0,30%)] grid-cols-1 gap-[10px] text-white md:mt-[20px] md:auto-rows-[minmax(0,20vw)] md:grid-cols-12 md:gap-[13px] xl:mt-[38px] xl:gap-[30px] 4xl:auto-rows-[minmax(0,550px)]"
+            class="mt-[15px] grid animate-fade-up auto-rows-[minmax(0,30%)] grid-cols-1 gap-[10px] text-white md:mt-[20px] md:auto-rows-[minmax(0,20vw)] md:grid-cols-12 md:gap-[13px] xl:mt-[38px] xl:gap-[30px] 4xl:auto-rows-[minmax(0,550px)]"
           >
             <div
               class="overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]"
             >
-              <img class="size-full object-cover" src="@img/olimpia_crm.png" alt="" />
+              <img class="size-full object-cover" :src="activeTab?.projects[0].image" alt="" />
             </div>
             <div
               class="overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]"
             >
-              <img class="size-full object-cover" src="@img/ukrainemart.png" alt="" />
+              <img class="size-full object-cover" :src="activeTab?.projects[1].image" alt="" />
             </div>
             <div
               class="overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]"
             >
-              <img class="size-full object-cover" src="@img/size_crm.png" alt="" />
+              <img class="size-full object-cover" :src="activeTab?.projects[2].image" />
             </div>
             <div
               class="overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]"
             >
-              <img class="size-full object-cover" src="@img/kuzka_shop.png" alt="" />
+              <img class="size-full object-cover" :src="activeTab?.projects[3].image" alt="" />
             </div>
           </div>
         </div>

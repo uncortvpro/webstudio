@@ -27,7 +27,7 @@
           <UiButtonOpacity
             class="text-[15px] font-medium text-white md:text-[23px] xl:text-[30px]"
             to="tel:+380500728146"
-            >+38(050) 072 814 6</UiButtonOpacity
+            >+38(050) 072 814 06</UiButtonOpacity
           >
         </div>
         <ul
