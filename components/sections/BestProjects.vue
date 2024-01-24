@@ -126,7 +126,7 @@
             </SwiperSlide>
           </Swiper>
           <div
-            class="mt-[15px] grid animate-fade-up auto-rows-[minmax(0,30%)] grid-cols-1 gap-[10px] text-white md:mt-[20px] md:auto-rows-[minmax(0,20vw)] md:grid-cols-12 md:gap-[13px] xl:mt-[38px] xl:gap-[30px] 4xl:auto-rows-[minmax(0,550px)]"
+            class="mt-[15px] grid animate-fade-up auto-rows-[minmax(0,30%)] grid-cols-1 gap-[10px] text-white md:mt-[20px] md:auto-rows-[minmax(0,300px)] md:grid-cols-12 md:gap-[13px] xl:mt-[38px] xl:gap-[30px] 4xl:auto-rows-[minmax(0,550px)]"
           >
             <div
               :class="
@@ -138,7 +138,11 @@
                 )
               "
             >
-              <img class="size-full object-cover" :src="activeTab?.projects[0].image" alt="" />
+              <img
+                class="size-full object-cover object-top"
+                :src="activeTab?.projects[0].image"
+                alt=""
+              />
             </div>
             <div
               :class="
@@ -147,7 +151,11 @@
                 )
               "
             >
-              <img class="size-full object-cover" :src="activeTab?.projects[1].image" alt="" />
+              <img
+                class="size-full object-cover object-top"
+                :src="activeTab?.projects[1].image"
+                alt=""
+              />
             </div>
             <div
               :class="
@@ -159,7 +167,7 @@
                 )
               "
             >
-              <img class="size-full object-cover" :src="activeTab?.projects[2].image" />
+              <img class="size-full object-cover object-top" :src="activeTab?.projects[2].image" />
             </div>
             <div
               v-if="activeTab?.projects[3]"
