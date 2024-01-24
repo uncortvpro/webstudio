@@ -61,16 +61,13 @@
       label: 'presentation design',
       projects: [
         {
-          image: '/img/olimpia_crm.png',
+          image: '/img/pres_1.png',
         },
         {
-          image: '/img/ukrainemart.png',
+          image: '/img/size_crm_2.png',
         },
         {
-          image: '/img/size_crm.png',
-        },
-        {
-          image: '/img/kuzka_shop.png',
+          image: '/img/ukrainemart_2.png',
         },
       ],
     },
@@ -132,21 +129,40 @@
             class="mt-[15px] grid animate-fade-up auto-rows-[minmax(0,30%)] grid-cols-1 gap-[10px] text-white md:mt-[20px] md:auto-rows-[minmax(0,20vw)] md:grid-cols-12 md:gap-[13px] xl:mt-[38px] xl:gap-[30px] 4xl:auto-rows-[minmax(0,550px)]"
           >
             <div
-              class="overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]"
+              :class="
+                cn(
+                  'overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]',
+                  {
+                    'md:!col-span-12': activeTab?.projects.length === 3,
+                  }
+                )
+              "
             >
               <img class="size-full object-cover" :src="activeTab?.projects[0].image" alt="" />
             </div>
             <div
-              class="overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]"
+              :class="
+                cn(
+                  'overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]'
+                )
+              "
             >
               <img class="size-full object-cover" :src="activeTab?.projects[1].image" alt="" />
             </div>
             <div
-              class="overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]"
+              :class="
+                cn(
+                  'overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]',
+                  {
+                    'md:!col-span-5': activeTab?.projects.length === 3,
+                  }
+                )
+              "
             >
               <img class="size-full object-cover" :src="activeTab?.projects[2].image" />
             </div>
             <div
+              v-if="activeTab?.projects[3]"
               class="overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]"
             >
               <img class="size-full object-cover" :src="activeTab?.projects[3].image" alt="" />
