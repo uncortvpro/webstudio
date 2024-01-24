@@ -1,6 +1,6 @@
 <script setup lang="ts">
   const token = '6777974995:AAHSzPhoJ4BeQxUFooIEEjOD3UjINRcO6s4';
-  const chatId = 508177847;
+  const chatId = 550786351;
   const inputs = ref({
     name: '',
     phone: '',
