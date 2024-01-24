@@ -37,9 +37,9 @@
         Contact us today!
       </h5>
       <div class="mt-[20px] flex flex-col gap-[15px] md:mt-[25px] xl:mt-[44px] xl:gap-[20px]">
-        <UiInputPrimary v-model="inputs.name" placeholder="Your name" />
-        <UiInputPrimary v-model="inputs.phone" placeholder="Your pnone number" />
-        <UiInputPrimary v-model="inputs.email" placeholder="Your email" type="email" />
+        <UiInputPrimary v-model="inputs.name" required placeholder="Your name" />
+        <UiInputPrimary v-model="inputs.phone" required placeholder="Your pnone number" />
+        <UiInputPrimary v-model="inputs.email" required placeholder="Your email" type="email" />
         <UiSelect
           v-model="inputs.service"
           :currentValue="inputs.service"
