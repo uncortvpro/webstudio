@@ -7,6 +7,7 @@
     email: '',
     service: '',
   });
+  const messageSuccess = ref('');
 
   const message = computed(
     () =>
@@ -22,7 +23,13 @@
       {
         method: 'POST',
       }
-    );
+    ).then(() => {
+      messageSuccess.value = "Thank you, we'll be in touch!";
+      inputs.value.email = '';
+      inputs.value.name = '';
+      inputs.value.phone = '';
+      inputs.value.service = '';
+    });
   };
 </script>
 
@@ -47,6 +54,7 @@
           placeholder="service you’re interested in"
         />
       </div>
+      <p v-if="messageSuccess" class="input_primary_text text-green-600">{{ messageSuccess }}</p>
       <UiButtonPrimary type="submit" class="mt-[25px] self-center md:mt-[30px] xl:mt-[50px]"
         >send</UiButtonPrimary
       >
