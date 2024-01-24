@@ -41,14 +41,14 @@
             </UiButtonOpacity>
           </li>
           <li>
-            <UiButtonOpacity to="https://api.whatsapp.com/send?phone=0953437562">
+            <UiButtonOpacity to="https://api.whatsapp.com/send?phone=380953437562">
               <SvgoWhatsapp
                 class="!h-[25px] !w-[25px] text-white md:!w-[30px] xl:!h-[36px] xl:!w-[36px]"
               />
             </UiButtonOpacity>
           </li>
           <li>
-            <UiButtonOpacity to="viber://chat?number=%2B40953437562">
+            <UiButtonOpacity to="viber://chat?number=%2B4380953437562">
               <SvgoViber
                 class="!h-[25px] !w-[25px] text-white md:!w-[30px] xl:!h-[36px] xl:!w-[36px]"
               />
