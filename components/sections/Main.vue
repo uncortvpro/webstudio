@@ -26,7 +26,7 @@
           >
             Your Vision, Our Code
           </h2>
-          <UiButtonPrimary class="mt-[20px] md:mt-[40px] xl:mt-[35pxs]"
+          <UiButtonPrimary to="#services" class="mt-[20px] md:mt-[40px] xl:mt-[35pxs]"
             >go to services</UiButtonPrimary
           >
         </div>
