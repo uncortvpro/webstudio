@@ -42,6 +42,14 @@ export default defineNuxtConfig({
           name: 'viewport',
           content: 'width=device-width, initial-scale=1, maximum-scale=1',
         },
+        {
+          name: 'description',
+          content: 'Web agency Ocean Script',
+        },
+        {
+          name: 'keywords',
+          content: 'web agency, ocean script, web, web studio, design agency, design studio',
+        },
       ],
     },
     buildAssetsDir: 'assets',
