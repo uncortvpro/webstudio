@@ -28,13 +28,13 @@
           image: useBaseUrl('/img/olimpia_crm.png'),
         },
         {
-          image:  useBaseUrl('/img/ukrainemart.png'),
+          image: useBaseUrl('/img/ukrainemart.png'),
         },
         {
-          image:  useBaseUrl('/img/size_crm.png'),
+          image: useBaseUrl('/img/size_crm.png'),
         },
         {
-          image:  useBaseUrl('/img/kuzka_shop.png'),
+          image: useBaseUrl('/img/kuzka_shop.png'),
         },
       ],
     },
@@ -43,16 +43,16 @@
       label: 'Ux/ui design',
       projects: [
         {
-          image:  useBaseUrl('/img/LogicGov.png'),
+          image: useBaseUrl('/img/LogicGov.png'),
         },
         {
-          image:  useBaseUrl('/img/Enterprice_gpt.png'),
+          image: useBaseUrl('/img/Enterprice_gpt.png'),
         },
         {
-          image:  useBaseUrl('/img/kwiga.png'),
+          image: useBaseUrl('/img/kwiga.png'),
         },
         {
-          image:  useBaseUrl('/img/CryptoEx.png'),
+          image: useBaseUrl('/img/CryptoEx.png'),
         },
       ],
     },
@@ -61,13 +61,13 @@
       label: 'presentation design',
       projects: [
         {
-          image:  useBaseUrl('/img/pres_1.png'),
+          image: useBaseUrl('/img/pres_1.png'),
         },
         {
-          image:  useBaseUrl('/img/size_crm_2.png'),
+          image: useBaseUrl('/img/size_crm_2.png'),
         },
         {
-          image:  useBaseUrl('/img/ukrainemart_2.png'),
+          image: useBaseUrl('/img/ukrainemart_2.png'),
         },
       ],
     },
