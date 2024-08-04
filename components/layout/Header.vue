@@ -4,7 +4,6 @@
   const changeVisibilityMenu = (value: boolean) => {
     isActive.value = value;
   };
-
   provide('changeVisibilityMenu', changeVisibilityMenu);
 </script>
 
