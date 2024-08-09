@@ -1,1 +1,0 @@
-import{_,x as e}from"./entry.fccda37e.js";import c from"./NuxtScrollbar.190b8f92.js";import{B as n,C as a,A as r,D as s}from"./swiper-vue.5b215f1a.js";const m={};function f(p,x){const t=e,o=c;return r(),n(o,{tag:"div",class:"max-h-[100svh]"},{default:a(()=>[s(t)]),_:1})}const i=_(m,[["render",f]]);export{i as default};
