@@ -11,11 +11,13 @@
       <LayoutHeader />
       <div class="grid grid-cols-1 lg:grid-cols-6">
         <div class="max-w-[1179px] lg:col-span-4">
-          <p
-            class="animate_print_text mt-[15px] text-[12px] text-white md:mt-[30px] md:text-[20px] xl:mt-[50px] xl:text-[25px]"
-          >
-            Web agency Ocean Script
-          </p>
+          <ClientOnly>
+            <p
+              class="animate_print_text mt-[15px] text-[12px] text-white md:mt-[30px] md:text-[20px] xl:mt-[50px] xl:text-[25px]"
+            >
+              Web agency Ocean Script
+            </p>
+          </ClientOnly>
           <h2
             class="mt-[10px] text-[30px] font-semibold leading-[120%] text-white md:mt-[15px] md:text-[50px] xl:mt-[20px] xl:text-[75px]"
           >
