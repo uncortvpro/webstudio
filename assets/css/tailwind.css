@@ -35,7 +35,7 @@
   }
 
   body {
-    @apply bg-black font-primary;
+    @apply bg-black font-primary overflow-hidden;
   }
   .input_without_arrow::-webkit-outer-spin-button,
   .input_without_arrow::-webkit-inner-spin-button {
