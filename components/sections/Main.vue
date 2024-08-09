@@ -12,7 +12,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-6">
         <div class="max-w-[1179px] lg:col-span-4">
           <p
-            class="animate_print_text mt-[15px] text-[12px] text-white md:mt-[30px] md:text-[20px] xl:mt-[120px] xl:text-[25px]"
+            class="animate_print_text mt-[15px] text-[12px] text-white md:mt-[30px] md:text-[20px] xl:mt-[50px] xl:text-[25px]"
           >
             Web agency Ocean Script
           </p>
@@ -37,7 +37,7 @@
             alt=""
           />
         </div>
-        <CommonOurAdvances class="mt-[15px] lg:col-span-6 lg:mt-[55px]" />
+        <CommonOurAdvances class="mt-[15px] lg:col-span-6 lg:mt-[85px]" />
       </div>
     </div>
   </div>

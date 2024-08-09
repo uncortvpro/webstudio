@@ -5,11 +5,12 @@ export function useAnimateSection(section: Ref, isShowSection: Ref<boolean>) {
   const sectionVisible = useElementVisibility(section);
   const visibleSection = () => {
     if (sectionVisible.value) {
-      isShowSection.value = true;
+      setTimeout(() => {
+        isShowSection.value = true;
+      }, 200)
     }
   };
   watchDeep(sectionVisible, () => {
-    console.log(sectionVisible.value);
 
     visibleSection();
   });

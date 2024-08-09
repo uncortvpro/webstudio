@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  const { services } = useData();
+
   const token = '6777974995:AAHSzPhoJ4BeQxUFooIEEjOD3UjINRcO6s4';
   const chatId = 550786351;
   const inputs = ref({
@@ -8,6 +10,8 @@
     service: '',
   });
   const messageSuccess = ref('');
+
+  const servicesOptions = computed(() => services.map((el) => el.title));
 
   const message = computed(
     () =>
@@ -50,7 +54,7 @@
         <UiSelect
           v-model="inputs.service"
           :currentValue="inputs.service"
-          :options="['Web-Development', 'UX/UI Design', 'presentation Design']"
+          :options="servicesOptions"
           placeholder="service you’re interested in"
         />
       </div>

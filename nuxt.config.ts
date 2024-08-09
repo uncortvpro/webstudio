@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       baseUrl: process.env.NUXT_APP_BASE_URL,
     },
   },
-  modules: ['@nuxt/ui', 'nuxt-svgo', '@pinia/nuxt', '@vueuse/nuxt', 'nuxt-swiper'],
+  modules: ['@nuxt/ui', 'nuxt-svgo', '@pinia/nuxt', '@vueuse/nuxt', 'nuxt-swiper', '@davestewart/nuxt-scrollbar',],
   ssr: false,
   css: ['~/assets/css/fonts.css'],
   alias: {
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Ocean Script',
+      title: 'Ocean Script | Web agency',
       meta: [
         {
           name: 'viewport',
@@ -44,7 +44,7 @@ export default defineNuxtConfig({
         },
         {
           name: 'description',
-          content: 'Web agency Ocean Script',
+          content: 'Ocean Script - your reliable web agency specializing in unique website and web application development. We offer a full range of services from design to development and support. Trust the professionals and achieve quality results!"',
         },
         {
           name: 'keywords',

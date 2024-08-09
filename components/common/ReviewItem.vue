@@ -1,6 +1,6 @@
 <script setup lang="ts">
-  defineProps<{
-    review: any;
+  const props = defineProps<{
+    review: Review;
   }>();
 </script>
 
@@ -10,32 +10,23 @@
   >
     <div>
       <h5 class="text-[15px] font-medium text-white md:text-[23px] xl:text-[30px]">
-        {{ review.name }}
+        {{ props.review.name }}
       </h5>
-      <p
-        class="mt-[15px] text-[12px] leading-[150%] text-white md:mt-[5px] md:text-[20px] xl:mt-[13px] xl:text-[25px]"
+      <NuxtScrollbar
+        tag="div"
+        class="scroll_container mt-[15px] max-h-[200px] overflow-scroll overscroll-x-contain pr-[10px] text-[12px] leading-[150%] text-white md:mt-[5px] md:text-[20px] xl:mt-[13px] xl:text-[25px]"
       >
-        {{ review.review }}
-      </p>
-    </div>
-    <div class="mt-[39px] flex items-center gap-[10px] md:mt-[80px] xl:mt-[68px]">
-      <SvgoStar
-        class="!h-[6vw] max-h-[25px] !w-[6vw] max-w-[25px] text-[#FFF500] md:max-h-[35px] md:max-w-[35px]"
-      />
-      <SvgoStar
-        class="!h-[6vw] max-h-[25px] !w-[6vw] max-w-[25px] text-[#FFF500] md:max-h-[35px] md:max-w-[35px]"
-      />
-      <SvgoStar
-        class="!h-[6vw] max-h-[25px] !w-[6vw] max-w-[25px] text-[#FFF500] md:max-h-[35px] md:max-w-[35px]"
-      />
-      <SvgoStar
-        class="!h-[6vw] max-h-[25px] !w-[6vw] max-w-[25px] text-[#FFF500] md:max-h-[35px] md:max-w-[35px]"
-      />
-      <SvgoStar
-        class="!h-[6vw] max-h-[25px] !w-[6vw] max-w-[25px] text-[#FFF500] md:max-h-[35px] md:max-w-[35px]"
-      />
+        <p>
+          {{ props.review.review }}
+        </p>
+      </NuxtScrollbar>
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style>
+  .scroll_container > .ps__rail-x,
+  .scroll_container > .ps__rail-y {
+    @apply !opacity-60;
+  }
+</style>

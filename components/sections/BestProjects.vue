@@ -25,16 +25,20 @@
       label: 'Web-development',
       projects: [
         {
-          image: useBaseUrl('/img/olimpia_crm.png'),
+          image: useBaseUrl('/img/ukrainemart_2.png'),
+          link: 'https://ukrainemart.com/',
         },
         {
-          image: useBaseUrl('/img/ukrainemart.png'),
+          image: useBaseUrl('/img/clickwerk.jpg'),
+          link: 'https://clickwerk.eu/',
         },
         {
           image: useBaseUrl('/img/size_crm.png'),
+          link: 'https://size-crm.com/',
         },
         {
           image: useBaseUrl('/img/kuzka_shop.png'),
+          link: '',
         },
       ],
     },
@@ -44,15 +48,19 @@
       projects: [
         {
           image: useBaseUrl('/img/LogicGov.png'),
+          link: '',
         },
         {
           image: useBaseUrl('/img/Enterprice_gpt.png'),
+          link: '',
         },
         {
           image: useBaseUrl('/img/kwiga.png'),
+          link: '',
         },
         {
           image: useBaseUrl('/img/CryptoEx.png'),
+          link: '',
         },
       ],
     },
@@ -62,12 +70,15 @@
       projects: [
         {
           image: useBaseUrl('/img/pres_1.png'),
+          link: '',
         },
         {
           image: useBaseUrl('/img/size_crm_2.png'),
+          link: '',
         },
         {
           image: useBaseUrl('/img/ukrainemart_2.png'),
+          link: '',
         },
       ],
     },
@@ -77,6 +88,7 @@
   const activeTab = computed(() => tabs.find((el) => el.id === activeTadId.value));
   const bestProjectsSection = ref();
   const isShowSection = ref<boolean>(false);
+
   useAnimateSection(bestProjectsSection, isShowSection);
 
   const changeTab = (tabId: number) => {
@@ -126,20 +138,27 @@
             </SwiperSlide>
           </Swiper>
           <div
+            :key="activeTadId"
             class="mt-[15px] grid animate-fade-up auto-rows-[minmax(0,30%)] grid-cols-1 gap-[10px] text-white md:mt-[20px] md:auto-rows-[minmax(0,37vw)] md:grid-cols-12 md:gap-[13px] xl:mt-[38px] xl:gap-[30px] 4xl:auto-rows-[minmax(0,550px)]"
           >
             <div
               :class="
                 cn(
-                  'overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]',
+                  'group relative overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]',
                   {
                     'md:!col-span-12': activeTab?.projects.length === 3,
+                    'cursor-pointer': activeTab?.projects[0]?.link,
                   }
                 )
               "
             >
+              <UiButton
+                class="absolute left-0 top-0 z-10 h-full w-full"
+                :to="activeTab?.projects[0]?.link"
+                v-if="activeTab?.projects[0]?.link"
+              ></UiButton>
               <img
-                class="size-full object-cover object-top"
+                class="size-full object-cover object-top duration-hover group-hover:scale-110"
                 :src="activeTab?.projects[0].image"
                 alt=""
               />
@@ -147,12 +166,20 @@
             <div
               :class="
                 cn(
-                  'overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]'
+                  'group relative overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]',
+                  {
+                    'cursor-pointer': activeTab?.projects[1]?.link,
+                  }
                 )
               "
             >
+              <UiButton
+                class="absolute left-0 top-0 z-10 h-full w-full"
+                :to="activeTab?.projects[1]?.link"
+                v-if="activeTab?.projects[1]?.link"
+              ></UiButton>
               <img
-                class="size-full object-cover object-top"
+                class="size-full object-cover object-top duration-hover group-hover:scale-110"
                 :src="activeTab?.projects[1].image"
                 alt=""
               />
@@ -160,20 +187,45 @@
             <div
               :class="
                 cn(
-                  'overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]',
+                  'group  relative overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]',
                   {
                     'md:!col-span-5': activeTab?.projects.length === 3,
+                    'cursor-pointer': activeTab?.projects[2]?.link,
                   }
                 )
               "
             >
-              <img class="size-full object-cover object-top" :src="activeTab?.projects[2].image" />
+              <UiButton
+                class="absolute left-0 top-0 z-10 h-full w-full"
+                :to="activeTab?.projects[2]?.link"
+                v-if="activeTab?.projects[2]?.link"
+              ></UiButton>
+              <img
+                class="size-full object-cover object-top duration-hover group-hover:scale-110"
+                :src="activeTab?.projects[2].image"
+              />
             </div>
             <div
               v-if="activeTab?.projects[3]"
-              class="overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]"
+              :class="
+                cn(
+                  'group relative overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]',
+                  {
+                    'cursor-pointer': activeTab?.projects[3]?.link,
+                  }
+                )
+              "
             >
-              <img class="size-full object-cover" :src="activeTab?.projects[3].image" alt="" />
+              <UiButton
+                class="absolute left-0 top-0 z-10 h-full w-full"
+                :to="activeTab?.projects[3]?.link"
+                v-if="activeTab?.projects[3]?.link"
+              ></UiButton>
+              <img
+                class="size-full object-cover duration-hover group-hover:scale-110"
+                :src="activeTab?.projects[3].image"
+                alt=""
+              />
             </div>
           </div>
         </div>

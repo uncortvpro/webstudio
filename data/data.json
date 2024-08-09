@@ -1,0 +1,60 @@
+{
+  "yearsOfExperience": 5,
+  "services": [
+    {
+      "title": "Web-Development",
+      "description": "Engaging and responsive websites for a strong online presence"
+    },
+    {
+      "title": "UX/UI Design",
+      "description": "Intuitive and user-friendly interfaces for seamless user experiences"
+    },
+    {
+      "title": "Presentation Design",
+      "description": "Crafting visually stunning presentations to elevate your message effectively"
+    },
+    {
+      "title": "Product Development and Operations Setup",
+      "description": "Strategic planning and implementation for successful product launches and operational efficiency"
+    },
+    {
+      "title": "AI-Based Solutions",
+      "description": "Innovative AI-driven technologies to enhance automation and decision-making processes"
+    },
+    {
+      "title": "SMM & Target",
+      "description": "Effective social media management and targeted advertising to boost your online visibility"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Clickwerk",
+      "review": "I turned to Ocean Script to create a large project with extensive functionality in the admin panel and web shop. Ocean Script accomplished this task perfectly, showing a high level of professionalism and attention to detail. All my requests and wishes were taken into account, even the smallest and, at first glance, capricious. The work was done with high quality! I recommend Ocean Script as a reliable and responsible specialist who copes with tasks of any complexity."
+    },
+    {
+      "name": "Clickwerk",
+      "review": "Ocean Script demonstrated outstanding web design skills by creating a top-notch design for our web store. Their creativity and attention to detail led to a result that exceeded our expectations!"
+    },
+
+    {
+      "name": "Natalia",
+      "review": "Working with Ocean Script was a game-changer for our business. Their web development expertise brought our online presence to a whole new level. The team's dedication and creativity truly set them apart."
+    },
+    {
+      "name": "Dmitri",
+      "review": "Impressed with the seamless collaboration and top-notch results delivered by Ocean Script. Their web solutions are not just functional, but they also have an eye for design that adds a touch of elegance to the user experience. Highly recommended!"
+    },
+    {
+      "name": "Andrei",
+      "review": "Ocean Script turned our vision into reality with their impeccable web development skills. The team was responsive, professional, and went above and beyond to ensure our website exceeded expectations. A reliable partner for any online venture."
+    },
+    {
+      "name": "Aleksander",
+      "review": "Partnering with Ocean Script was a breeze from start to finish. Their expertise in web development is matched by their commitment to client satisfaction. Our website is now a powerful tool thanks to their innovative approach and attention to detail."
+    },
+    {
+      "name": "Jaroslav",
+      "review": "Thrilled with the results of our collaboration with Ocean Script. Their web development team demonstrated a deep understanding of our industry, translating complex ideas into a user-friendly website. Their professionalism and commitment to quality are commendable."
+    }
+  ]
+}
