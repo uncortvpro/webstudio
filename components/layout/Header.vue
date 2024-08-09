@@ -1,10 +1,8 @@
 <script setup lang="ts">
   const isActive = ref<boolean>(false);
-
   const changeVisibilityMenu = (value: boolean) => {
     isActive.value = value;
   };
-
   provide('changeVisibilityMenu', changeVisibilityMenu);
 </script>
 
