@@ -19,9 +19,7 @@
       </p>
     </div>
     <div>
-      <p class="text-[45px] font-medium text-white md:text-[72px] xl:text-[100px]">
-        <UiCounter :number="8"></UiCounter>
-      </p>
+      <p class="text-[45px] font-medium text-white md:text-[72px] xl:text-[100px]">8</p>
       <p class="mt-[10px] text-[10px] text-white md:text-[16px] xl:mt-[15px] xl:text-[20px]">
         professionals
       </p>
