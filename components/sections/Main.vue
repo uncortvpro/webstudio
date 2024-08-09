@@ -52,4 +52,32 @@
   .gradient_bg_black {
     background: linear-gradient(to bottom, transparent 19%, #000000 84%);
   }
+
+  @keyframes flashin-border {
+    0% {
+      border-color: orange;
+    }
+    50% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: orange;
+    }
+  }
+
+  @keyframes printed-text {
+    from {
+      width: 0%;
+    }
+  }
+
+  .animate_print_text {
+    width: 100%;
+    overflow: hidden;
+    line-height: 130%;
+    white-space: nowrap;
+    animation:
+      printed-text 3s steps(51),
+      flashin-border 0.75s step-start infinite;
+  }
 </style>
