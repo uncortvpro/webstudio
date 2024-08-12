@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <NuxtScrollbar tag="div" class="max-h-[100svh]">
+  <div>
     <NuxtPage></NuxtPage>
-  </NuxtScrollbar>
+  </div>
 </template>
 
 <style scoped></style>

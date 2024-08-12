@@ -3,6 +3,21 @@
 @tailwind utilities;
 
 @layer components {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(200, 200, 200, 0.5);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: rgba(165, 165, 165, 0.5);
+  }
+
   * {
     @apply leading-[100%];
   }
@@ -35,7 +50,7 @@
   }
 
   body {
-    @apply no_scroll_bar overflow-hidden bg-black font-primary;
+    @apply  bg-black font-primary;
   }
   .input_without_arrow::-webkit-outer-spin-button,
   .input_without_arrow::-webkit-inner-spin-button {
@@ -84,5 +99,4 @@
   .min_height_animate_sec {
     min-height: 30vh;
   }
-
 }

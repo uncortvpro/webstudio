@@ -12,14 +12,13 @@
       <h5 class="text-[15px] font-medium text-white md:text-[23px] xl:text-[30px]">
         {{ props.review.name }}
       </h5>
-      <NuxtScrollbar
-        tag="div"
-        class="scroll_container mt-[15px] max-h-[200px] overflow-scroll overscroll-x-contain pr-[10px] text-[12px] leading-[150%] text-white md:mt-[5px] md:text-[20px] xl:mt-[13px] xl:text-[25px]"
+      <div
+        class="scroll_container mt-[15px] h-[200px] overflow-auto overscroll-x-contain pr-[10px] text-[12px] leading-[150%] text-white md:mt-[5px] md:text-[20px] xl:mt-[13px] xl:text-[25px]"
       >
         <p>
           {{ props.review.review }}
         </p>
-      </NuxtScrollbar>
+      </div>
     </div>
   </div>
 </template>
