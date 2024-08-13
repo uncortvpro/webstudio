@@ -1,0 +1,1 @@
+import{_ as t,A as o}from"./entry.075b0008.js";import{L as n,D as c,A as _}from"./swiper-vue.bc0efd85.js";const r={};function a(s,f){const e=o;return _(),n("div",null,[c(e)])}const p=t(r,[["render",a]]);export{p as default};
