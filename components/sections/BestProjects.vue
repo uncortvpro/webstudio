@@ -27,40 +27,48 @@
         {
           image: useBaseUrl('/img/ukrainemart_2.png'),
           link: 'https://ukrainemart.com/',
+          alt: 'Ukrainemart - web development project'
         },
         {
           image: useBaseUrl('/img/clickwerk.jpg'),
           link: 'https://clickwerk.eu/',
+          alt: 'Clickwerk web development project showcasing responsive design and modern UI'
         },
         {
           image: useBaseUrl('/img/size_crm.png'),
           link: 'https://size-crm.com/',
+          alt: 'Size-crm project example demonstrating effective web development solutions'
         },
         {
           image: useBaseUrl('/img/kuzka_shop.png'),
           link: '',
+          alt: 'Product Development and Operations Setup'
         },
       ],
     },
     {
       id: 3,
-      label: 'Ux/ui design',
+      label: 'Ui/ux design',
       projects: [
         {
           image: useBaseUrl('/img/LogicGov.png'),
           link: '',
+          alt: 'UX/UI design mockup showcasing intuitive user interface'
         },
         {
           image: useBaseUrl('/img/Enterprice_gpt.png'),
           link: '',
+          alt: 'Interactive user experience design with modern layout'
         },
         {
           image: useBaseUrl('/img/kwiga.png'),
           link: '',
+          alt: 'High-fidelity prototype of e-commerce app with user-friendly navigation'
         },
         {
           image: useBaseUrl('/img/CryptoEx.png'),
           link: '',
+          alt: 'Modern web design with engaging user interface elements'
         },
       ],
     },
@@ -71,14 +79,17 @@
         {
           image: useBaseUrl('/img/pres_1.png'),
           link: '',
+          alt: 'Professional presentation design with modern slide layout'
         },
         {
           image: useBaseUrl('/img/size_crm_2.png'),
           link: '',
+          alt: 'Size crm visually engaging presentation slide featuring infographic'
         },
         {
           image: useBaseUrl('/img/ukrainemart_2.png'),
           link: '',
+          alt: 'Ukrainemart Presentation slide featuring a mix of text and graphics'
         },
       ],
     },
@@ -160,7 +171,7 @@
               <img
                 class="size-full object-cover object-top duration-hover group-hover:scale-110"
                 :src="activeTab?.projects[0].image"
-                alt=""
+                :alt="activeTab?.projects[0]?.alt"
               />
             </div>
             <div
@@ -181,7 +192,7 @@
               <img
                 class="size-full object-cover object-top duration-hover group-hover:scale-110"
                 :src="activeTab?.projects[1].image"
-                alt=""
+                :alt="activeTab?.projects[1]?.alt"
               />
             </div>
             <div
@@ -203,6 +214,7 @@
               <img
                 class="size-full object-cover object-top duration-hover group-hover:scale-110"
                 :src="activeTab?.projects[2].image"
+                :alt="activeTab?.projects[2]?.alt"
               />
             </div>
             <div
@@ -224,7 +236,7 @@
               <img
                 class="size-full object-cover duration-hover group-hover:scale-110"
                 :src="activeTab?.projects[3].image"
-                alt=""
+                :alt="activeTab?.projects[3]?.alt"
               />
             </div>
           </div>
