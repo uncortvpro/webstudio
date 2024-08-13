@@ -13,7 +13,7 @@
       </h3>
     </div>
     <p
-      class="mt-[5px] font-primary text-[12px] leading-[150%] text-white md:text-[20px] xl:mt-[7px] xl:text-[25px]"
+      class="mt-[5px] font-primary text-[12px] leading-[150%] text-white md:text-[20px] xl:mt-[7px] xl:text-[22px]"
     >
       {{ item.description }}
     </p>

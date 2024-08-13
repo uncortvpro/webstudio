@@ -28,9 +28,12 @@
           >
             Your Vision, Our Code
           </h2>
-          <UiButtonPrimary to="#services" class="mt-[20px] inline-block md:mt-[40px] xl:mt-[35pxs]"
-            >go to services</UiButtonPrimary
+          <UiButtonPrimary
+            to="#services"
+            class="mt-[20px] inline-block rounded px-4 py-2 font-bold text-white transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg md:mt-[40px] xl:mt-[35px]"
           >
+            go to services
+          </UiButtonPrimary>
         </div>
         <div class="mt-[35px] flex flex-col sm:mt-[-5%] lg:col-span-2 lg:mt-auto">
           <img

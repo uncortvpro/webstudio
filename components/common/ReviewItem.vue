@@ -13,7 +13,7 @@
         {{ props.review.name }}
       </h5>
       <div
-        class="scroll_container mt-[15px] h-[200px] overflow-auto overscroll-x-contain pr-[10px] text-[12px] leading-[150%] text-white md:mt-[5px] md:text-[20px] xl:mt-[13px] xl:text-[25px]"
+        class="scroll_container mt-[15px] h-[200px] overflow-auto overscroll-x-contain pr-[10px] text-[12px] leading-[150%] text-white md:mt-[5px] md:text-[20px] xl:mt-[13px] xl:text-[22px]"
       >
         <p>
           {{ props.review.review }}

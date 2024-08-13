@@ -10,20 +10,20 @@
       "description": "Intuitive and user-friendly interfaces for seamless user experiences"
     },
     {
-      "title": "Presentation Design",
-      "description": "Crafting visually stunning presentations to elevate your message effectively"
-    },
-    {
-      "title": "Product Development and Operations Setup",
-      "description": "Strategic planning and implementation for successful product launches and operational efficiency"
-    },
-    {
       "title": "AI-Based Solutions",
       "description": "Innovative AI-driven technologies to enhance automation and decision-making processes"
     },
     {
+      "title": "Product Development",
+      "description": "Strategic planning and implementation for successful product launches and operational efficiency"
+    },
+    {
       "title": "SMM & Target",
       "description": "Effective social media management and targeted advertising to boost your online visibility"
+    },
+    {
+      "title": "Presentation Design",
+      "description": "Crafting visually stunning presentations to elevate your message effectively"
     }
   ],
   "reviews": [
