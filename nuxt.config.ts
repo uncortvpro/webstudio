@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { fonts } from './config/fonts';
+import { fonts } from './config/fontsPreload';
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -80,7 +80,7 @@ export default defineNuxtConfig({
           }),
         },
       ],
-      link: fonts,
+      link: fontsPreload,
     },
     baseURL: process.env.NUXT_APP_BASE_URL,
     buildAssetsDir: 'assets',

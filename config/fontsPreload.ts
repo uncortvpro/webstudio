@@ -1,4 +1,4 @@
-export const fonts: any = [
+export const fontsPreload: any = [
   {
     rel: 'preload',
     href: '/fonts/poppins/Poppins-Thin.ttf',
