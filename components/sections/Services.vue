@@ -2,7 +2,7 @@
   const { services } = useData();
 
   const servicesSection = ref();
-  const isShowSection = ref<boolean>(true);
+  const isShowSection = ref<boolean>(false);
   useAnimateSection(servicesSection, isShowSection);
 </script>
 

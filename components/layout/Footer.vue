@@ -11,7 +11,7 @@
     class="pb-[35px] pt-[70px] md:pb-[90px] md:pt-[95px] xl:pb-[116px] xl:pt-[120px]"
   >
     <div
-      v-if="isShowSection"
+      v-show="isShowSection"
       :class="
         cn('duration_show_section  duration-300', {
           'animate-fade-down': isShowSection,

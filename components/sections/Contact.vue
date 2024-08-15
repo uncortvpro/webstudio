@@ -7,7 +7,7 @@
 <template>
   <div ref="contactSection" :class="{ min_height_animate_sec: !isShowSection }">
     <div
-      v-if="isShowSection"
+      v-show="isShowSection"
       class="duration_show_section container flex animate-fade-up flex-col gap-[70px] xl:flex-row xl:items-center xl:justify-between"
     >
       <div class="relative self-start xl:self-center">

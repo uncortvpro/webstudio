@@ -7,11 +7,10 @@ export function useAnimateSection(section: Ref, isShowSection: Ref<boolean>) {
     if (sectionVisible.value) {
       setTimeout(() => {
         isShowSection.value = true;
-      }, 200)
+      }, 200);
     }
   };
   watchDeep(sectionVisible, () => {
-
     visibleSection();
   });
 }
