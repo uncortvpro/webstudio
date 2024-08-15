@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-extraneous-dependencies */
 import type { Config } from 'tailwindcss';
-import VAR from './global/variables';
+import VAR from './config/variables';
 
 export default <Partial<Config>>{
   content: [

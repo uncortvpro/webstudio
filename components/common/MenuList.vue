@@ -25,6 +25,6 @@
 
 <style scoped>
   .menu_item {
-    @apply text-[15px] font-medium lowercase text-white md:text-[23px] xl:text-[30px];
+    @apply text-[15px] font-medium lowercase text-white md:text-[23px] 3xl:text-[30px];
   }
 </style>

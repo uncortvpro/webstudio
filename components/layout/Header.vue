@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <header class="py-[25px] md:py-[30px] xl:py-[40px]">
+  <header class="py-[25px] md:py-[30px] 3xl:py-[40px]">
     <div class="flex justify-between">
       <CommonLogo class="relative z-[60]" />
       <CommonMenuList class="hidden items-center gap-[50px] lg:flex 3xl:gap-[80px]" />
