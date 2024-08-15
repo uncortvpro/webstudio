@@ -27,22 +27,22 @@
         {
           image: useBaseUrl('/img/ukrainemart_2.png'),
           link: 'https://ukrainemart.com/',
-          alt: 'Ukrainemart - web development project'
+          alt: 'Ukrainemart - web development project',
         },
         {
           image: useBaseUrl('/img/clickwerk.jpg'),
           link: 'https://clickwerk.eu/',
-          alt: 'Clickwerk web development project showcasing responsive design and modern UI'
+          alt: 'Clickwerk web development project showcasing responsive design and modern UI',
         },
         {
           image: useBaseUrl('/img/size_crm.png'),
           link: 'https://size-crm.com/',
-          alt: 'Size-crm project example demonstrating effective web development solutions'
+          alt: 'Size-crm project example demonstrating effective web development solutions',
         },
         {
           image: useBaseUrl('/img/kuzka_shop.png'),
           link: '',
-          alt: 'Product Development and Operations Setup'
+          alt: 'Product Development and Operations Setup',
         },
       ],
     },
@@ -53,22 +53,22 @@
         {
           image: useBaseUrl('/img/LogicGov.png'),
           link: '',
-          alt: 'UX/UI design mockup showcasing intuitive user interface'
+          alt: 'UX/UI design mockup showcasing intuitive user interface',
         },
         {
           image: useBaseUrl('/img/Enterprice_gpt.png'),
           link: '',
-          alt: 'Interactive user experience design with modern layout'
+          alt: 'Interactive user experience design with modern layout',
         },
         {
           image: useBaseUrl('/img/kwiga.png'),
           link: '',
-          alt: 'High-fidelity prototype of e-commerce app with user-friendly navigation'
+          alt: 'High-fidelity prototype of e-commerce app with user-friendly navigation',
         },
         {
           image: useBaseUrl('/img/CryptoEx.png'),
           link: '',
-          alt: 'Modern web design with engaging user interface elements'
+          alt: 'Modern web design with engaging user interface elements',
         },
       ],
     },
@@ -79,17 +79,17 @@
         {
           image: useBaseUrl('/img/pres_1.png'),
           link: '',
-          alt: 'Professional presentation design with modern slide layout'
+          alt: 'Professional presentation design with modern slide layout',
         },
         {
           image: useBaseUrl('/img/size_crm_2.png'),
           link: '',
-          alt: 'Size crm visually engaging presentation slide featuring infographic'
+          alt: 'Size crm visually engaging presentation slide featuring infographic',
         },
         {
           image: useBaseUrl('/img/ukrainemart_2.png'),
           link: '',
-          alt: 'Ukrainemart Presentation slide featuring a mix of text and graphics'
+          alt: 'Ukrainemart Presentation slide featuring a mix of text and graphics',
         },
       ],
     },

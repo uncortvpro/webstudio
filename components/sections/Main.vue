@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="relative flex flex-col overflow-hidden pb-[60px] md:pb-[70px] 4xl:pb-[86px]">
+  <div class="relative flex flex-col overflow-hidden pb-[60px] md:pb-[70px] xl:pb-[100px]">
     <CommonAnimateRainCode />
     <div class="gradient_bg absolute left-0 top-0 size-full" />
     <div class="gradient_bg_black absolute left-0 top-0 size-full" />
