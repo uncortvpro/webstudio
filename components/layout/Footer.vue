@@ -11,6 +11,7 @@
     class="pb-[35px] pt-[70px] md:pb-[90px] md:pt-[95px] xl:pb-[116px] xl:pt-[120px]"
   >
     <div
+      v-if="isShowSection"
       :class="
         cn('duration_show_section  duration-300', {
           'animate-fade-down': isShowSection,
@@ -27,24 +28,31 @@
           <UiButtonOpacity
             class="text-[15px] font-medium text-white md:text-[23px] xl:text-[30px]"
             to="tel:+380953437562"
-            >+38(095) 343 75 62</UiButtonOpacity>
+            >+38(095) 343 75 62</UiButtonOpacity
+          >
         </div>
         <ul
           class="mt-[16px] flex basis-full items-center gap-[20px] md:mt-[30px] md:justify-center md:gap-[25px] xl:mt-[0px] xl:basis-auto"
         >
           <li>
             <UiButtonOpacity to="https://t.me/ocean_script">
-              <SvgoTelegram class="!h-[25px] !w-[25px] text-white md:!w-[30px] xl:!h-[36px] xl:!w-[36px]"/>
+              <SvgoTelegram
+                class="!h-[25px] !w-[25px] text-white md:!w-[30px] xl:!h-[36px] xl:!w-[36px]"
+              />
             </UiButtonOpacity>
           </li>
           <li>
             <UiButtonOpacity to="https://api.whatsapp.com/send?phone=380953437562">
-              <SvgoWhatsapp class="!h-[25px] !w-[25px] text-white md:!w-[30px] xl:!h-[36px] xl:!w-[36px]"/>
+              <SvgoWhatsapp
+                class="!h-[25px] !w-[25px] text-white md:!w-[30px] xl:!h-[36px] xl:!w-[36px]"
+              />
             </UiButtonOpacity>
           </li>
           <li>
             <UiButtonOpacity to="viber://chat?number=%2B4380953437562">
-              <SvgoViber class="!h-[25px] !w-[25px] text-white md:!w-[30px] xl:!h-[36px] xl:!w-[36px]" />
+              <SvgoViber
+                class="!h-[25px] !w-[25px] text-white md:!w-[30px] xl:!h-[36px] xl:!w-[36px]"
+              />
             </UiButtonOpacity>
           </li>
         </ul>
