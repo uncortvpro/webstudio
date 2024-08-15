@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { fonts } from './config/fontsPreload';
+import { fontsPreload } from './config/fontsPreload';
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
