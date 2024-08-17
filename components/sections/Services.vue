@@ -8,7 +8,13 @@
 
 <template>
   <div ref="servicesSection" :class="cn('', { min_height_animate_sec: !isShowSection })">
-    <UiSection v-show="isShowSection" class="duration_show_section animate-fade-left">
+    <UiSection
+      :class="
+        cn('duration_show_section translate-x-[-10%]  opacity-0 duration-[2s]', {
+          'opacity-1 translate-x-[0%]': isShowSection,
+        })
+      "
+    >
       <template #title> services </template>
       <template #content>
         <div

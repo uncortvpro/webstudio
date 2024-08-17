@@ -20,8 +20,11 @@
 <template>
   <div ref="reviewsSection" :class="{ min_height_animate_sec: !isShowSection }">
     <UiSection
-      v-show="isShowSection"
-      class="duration_show_section animate-fade-right overflow-hidden"
+      :class="
+        cn('duration_show_section translate-x-[10%] overflow-hidden opacity-0 duration-[2s] ', {
+          'opacity-1 translate-x-[0%]': isShowSection,
+        })
+      "
     >
       <template #title> reviews </template>
       <template #content>
