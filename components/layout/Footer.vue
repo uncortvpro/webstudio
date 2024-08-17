@@ -10,14 +10,7 @@
     :class="{ min_height_animate_sec: !isShowSection }"
     class="pb-[35px] pt-[70px] md:pb-[90px] md:pt-[95px] xl:pb-[116px] xl:pt-[120px]"
   >
-    <div
-      v-show="isShowSection"
-      :class="
-        cn('duration_show_section  duration-300', {
-          'animate-fade-down': isShowSection,
-        })
-      "
-    >
+    <div v-show="isShowSection" :class="cn('duration_show_section animate-fade-down')">
       <div
         class="container flex flex-col flex-wrap items-center md:flex-row md:justify-between xl:flex-nowrap xl:justify-start xl:gap-[30px]"
       >

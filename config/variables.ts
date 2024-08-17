@@ -1,6 +1,7 @@
 const container = {
   CONTAINER_PADDING_X: '20px',
   CONTAINER_PADDING_X_MD: '50px',
+  CONTAINER_PADDING_X_XL: '70px',
 };
 
 const VAR = {

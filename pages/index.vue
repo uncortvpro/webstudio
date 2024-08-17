@@ -6,6 +6,7 @@
     <div class="relative overflow-hidden">
       <UiBgGradientAbsolute type="right" />
       <UiBgGradientAbsolute type="left" />
+
       <SectionsBestProjects id="best_projects" />
       <SectionsServices id="services" class="mt-[70px] md:mt-[95px] xl:mt-[120px]" />
       <SectionsLanguages class="mt-[70px] md:mt-[95px] xl:mt-[120px]" />

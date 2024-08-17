@@ -1,7 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  const mainSection = ref();
+  const isShowSection = ref<boolean>(false);
+
+  useAnimateSection(mainSection, isShowSection);
+</script>
 
 <template>
-  <div class="relative flex flex-col overflow-hidden pb-[60px] md:pb-[70px] xl:pb-[100px]">
+  <div
+    ref="mainSection"
+    class="relative flex flex-col overflow-hidden pb-[60px] md:pb-[70px] xl:pb-[100px]"
+  >
     <CommonAnimateRainCode />
     <div class="gradient_bg absolute left-0 top-0 size-full" />
     <div class="gradient_bg_black absolute left-0 top-0 size-full" />
@@ -40,7 +48,16 @@
             alt=""
           />
         </div>
-        <CommonOurAdvances class="mt-[15px] lg:col-span-6 lg:mt-[85px] 4xl:mt-[90px]" />
+        <CommonOurAdvances
+          :class="
+            cn(
+              'mt-[15px] translate-x-[10%] opacity-0 duration-[1s] lg:col-span-6 lg:mt-[85px] 4xl:mt-[90px]',
+              {
+                'opacity-1 translate-x-[0%]': isShowSection,
+              }
+            )
+          "
+        />
       </div>
     </div>
   </div>

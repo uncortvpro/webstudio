@@ -18,6 +18,7 @@ export default <Partial<Config>>{
       padding: {
         DEFAULT: VAR.CONTAINER_PADDING_X,
         md: VAR.CONTAINER_PADDING_X_MD,
+        xl: VAR.CONTAINER_PADDING_X_XL,
       },
     },
     screens: {
