@@ -1,7 +1,8 @@
 <script setup lang="ts">
-  defineProps<{
+  const props = defineProps<{
     modelValue?: any;
     placeholder?: string;
+    required?: boolean;
   }>();
 
   const emits = defineEmits(['update:modelValue']);
@@ -10,13 +11,18 @@
     const inputValue = (event.target as HTMLInputElement).value;
     emits('update:modelValue', inputValue);
   };
+
+  const concatPlaceholder = computed(
+    () => (props.placeholder ? props.placeholder : '') + (props.required ? '  *' : '')
+  );
 </script>
 
 <template>
   <input
     :value="modelValue"
-    :placeholder="placeholder ? placeholder : ''"
+    :placeholder="concatPlaceholder"
     type="text"
+    :required="required"
     class="input_primary_style"
     @input="handleInput"
   />

@@ -18,7 +18,7 @@
       <template #title> services </template>
       <template #content>
         <div
-          class="grid gap-[20px] md:gap-[22px] lg:grid-cols-3 lg:flex-row lg:items-center lg:justify-between lg:gap-[59px] 2xl:gap-[89px]"
+          class="grid auto-rows-fr gap-[20px] md:gap-[22px] lg:flex-row lg:items-center lg:justify-between lg:gap-[59px] xl:grid-cols-3 2xl:gap-[89px]"
         >
           <CommonServicesItem v-for="(service, index) in services" :key="index" :item="service" />
         </div>

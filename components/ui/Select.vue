@@ -13,8 +13,7 @@
     :uiMenu="{
       trigger: 'inline-flex w-full',
       background: '',
-      container:
-        'rounded-[25px] input_primary_bg shadow-lg w-[100%] overflow-hidden pt-[5px] md:pt-[10px]',
+      container: 'rounded-[25px] bg-black shadow-lg w-[100%] overflow-hidden pt-[5px] md:pt-[10px]',
       rounded: '',
       padding: 'p-0',
       base: '!ring-0',
@@ -22,7 +21,7 @@
       option: {
         base: 'input_primary_text lowercase input_primary_padding_x text-white',
         padding: 'px-[9px] py-[7px] md:px-[14px] xl:px-[19px] xl:py-[10px]',
-        active: 'bg-[rgba(0,10,255,0.3)]',
+        active: 'bg-[rgba(255,255,255,0.3)]',
         size: '',
         selectedIcon: {
           base: 'hidden',

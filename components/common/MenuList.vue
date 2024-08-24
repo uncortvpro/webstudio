@@ -1,4 +1,10 @@
 <script setup lang="ts">
+  defineProps<{
+    ui?: {
+      item: string;
+    };
+  }>();
+
   const changeVisibilityMenu: any = inject('changeVisibilityMenu');
 
   const onClickMenuItem = (path: string) => {
@@ -11,20 +17,22 @@
 
 <template>
   <ul>
-    <li class="menu_item">
-      <UiButtonOpacity @click="onClickMenuItem('#services')">services</UiButtonOpacity>
+    <li :class="cn('menu_item', ui?.item)">
+      <UiButton class="hover_opacity" @click="onClickMenuItem('#services')">services</UiButton>
     </li>
-    <li class="menu_item">
-      <UiButtonOpacity @click="onClickMenuItem('#best_projects')">portfolio</UiButtonOpacity>
+    <li :class="cn('menu_item', ui?.item)">
+      <UiButton class="hover_opacity" @click="onClickMenuItem('#best_projects')"
+        >portfolio</UiButton
+      >
     </li>
-    <li class="menu_item">
-      <UiButtonOpacity @click="onClickMenuItem('#contact')">contacts</UiButtonOpacity>
+    <li :class="cn('menu_item', ui?.item)">
+      <UiButton class="hover_opacity" @click="onClickMenuItem('#contact')">contacts</UiButton>
     </li>
   </ul>
 </template>
 
 <style scoped>
   .menu_item {
-    @apply text-[15px] font-medium lowercase text-white md:text-[23px] 3xl:text-[30px];
+    @apply text-[15px] font-medium lowercase text-black md:text-[23px] 3xl:text-[30px];
   }
 </style>

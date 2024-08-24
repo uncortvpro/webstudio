@@ -8,6 +8,7 @@
     phone: '',
     email: '',
     service: '',
+    budget: '',
   });
   // const messageSuccess = ref('');
   const isModalSuccess = ref(false);
@@ -19,7 +20,8 @@
       `Имя: ${inputs.value.name}
       \nТелефон: ${inputs.value.phone}
       \nEmail: ${inputs.value.email}
-      \nУслуга: ${inputs.value.service}`
+      \nУслуга: ${inputs.value.service}
+      \nБюджет: ${inputs.value.budget}`
   );
 
   const sendMessage = () => {
@@ -34,13 +36,14 @@
       inputs.value.name = '';
       inputs.value.phone = '';
       inputs.value.service = '';
+      inputs.value.budget = '';
     });
   };
 </script>
 
 <template>
   <div
-    class="max-w-[485px] rounded-[25px] bg-[rgba(0,10,255,0.5)] px-[15px] py-[25px] md:px-[32px] md:py-[30px] xl:max-w-[779px] xl:rounded-[50px] xl:px-[92px] xl:py-[45px]"
+    class="max-w-[485px] rounded-[25px] px-[15px] py-[25px] md:px-[32px] md:py-[30px] xl:max-w-[800px] xl:rounded-[50px] xl:px-[92px] xl:py-[45px]"
   >
     <UiModalSuccess
       v-model="isModalSuccess"
@@ -48,19 +51,33 @@
     ></UiModalSuccess>
     <form action="#" class="flex flex-col" @submit.prevent="sendMessage">
       <h5
-        class="text-center font-secondary text-[22px] font-semibold lowercase text-white md:text-[32px] xl:text-[40px]"
+        class="text-center font-secondary text-[18px] font-semibold lowercase text-black md:text-[23px] xl:text-[28px]"
       >
-        Contact us today!
+        Let's discuss your tasks. Contact today!
       </h5>
       <div class="mt-[20px] flex flex-col gap-[15px] md:mt-[25px] xl:mt-[44px] xl:gap-[20px]">
         <UiInputPrimary v-model="inputs.name" required placeholder="Your name" />
-        <UiInputPrimary v-model="inputs.phone" required placeholder="Your pnone number" />
+        <UiInputPrimary v-model="inputs.phone" placeholder="Your pnone number" />
         <UiInputPrimary v-model="inputs.email" required placeholder="Your email" type="email" />
         <UiSelect
+          class="relative z-[11]"
           v-model="inputs.service"
           :currentValue="inputs.service"
           :options="servicesOptions"
           placeholder="service you’re interested in"
+        />
+        <UiSelect
+          class="relative z-[10]"
+          v-model="inputs.budget"
+          :currentValue="inputs.budget"
+          :options="[
+            '$500 - $5,000',
+            '$5,000 - $10,000',
+            '$10,000 - $25,000',
+            '$25,000 - $50,000,',
+            'Over 50,000$',
+          ]"
+          placeholder="$500 - $5,000"
         />
       </div>
       <UiButtonPrimary type="submit" class="mt-[25px] self-center md:mt-[30px] xl:mt-[50px]"

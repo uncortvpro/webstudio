@@ -108,8 +108,18 @@
 </script>
 
 <template>
-  <div ref="bestProjectsSection" :class="{ min_height_animate_sec: !isShowSection }">
-    <UiSection v-show="isShowSection" class="duration_show_section relative animate-fade-up">
+  <div
+    ref="bestProjectsSection"
+    :class="
+      cn(' ', {
+        min_height_animate_sec: !isShowSection,
+      })
+    "
+  >
+    <UiSection
+      v-show="isShowSection"
+      class="duration_show_section relative animate-fade-up bg-[rgba(141,122,100,0.1)] py-[25p] md:py-[35px] xl:py-[44px]"
+    >
       <template #title> best projects </template>
       <template #content>
         <div class="relative z-10">
@@ -137,9 +147,9 @@
               <UiButton
                 :class="
                   cn(
-                    'w-fit rounded-[50px] border border-blue px-[16px] py-[5px] text-[10px] lowercase text-white duration-200 md:px-[22px] md:py-[10px] md:text-[16px] xl:border-[2px] xl:px-[43px] xl:py-[11px] xl:text-[25px]',
+                    'w-fit rounded-[50px] border border-black px-[16px] py-[5px] text-[10px] lowercase text-black duration-200 md:px-[22px] md:py-[10px] md:text-[16px] xl:border-[2px] xl:px-[43px] xl:py-[11px] xl:text-[25px]',
                     {
-                      'bg-blue': activeTadId === tab.id,
+                      'bg-black text-white': activeTadId === tab.id,
                     }
                   )
                 "

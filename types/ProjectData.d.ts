@@ -1,5 +1,10 @@
 declare interface ProjectData {
   yearsOfExperience: number;
   services: OurService[];
-  reviews: Review[]
+  reviews: Review[];
+  news: News[];
+  whyWe: {
+    title: string;
+    description: string;
+  }[];
 }

@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-swiper',
     '@davestewart/nuxt-scrollbar',
+    '@nuxt/image',
   ],
   ssr: false,
   css: ['~/assets/css/fonts.css'],

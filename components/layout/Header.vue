@@ -9,14 +9,14 @@
 <template>
   <header class="py-[25px] md:py-[30px] 3xl:py-[40px]">
     <div class="flex justify-between">
-      <CommonLogo class="relative z-[60]" />
+      <CommonLogo class="relative z-[40]" />
       <CommonMenuList class="hidden items-center gap-[50px] lg:flex 3xl:gap-[80px]" />
       <UiButtonBurger
         :isActive="isActive"
         class="relative z-[60] lg:hidden"
         @click="isActive = !isActive"
       />
-      <PagesMenuMobile
+      <CommonMenuMobile
         :isActive="isActive"
         class="lg:hidden"
         @changeVisibilityMenu="changeVisibilityMenu"

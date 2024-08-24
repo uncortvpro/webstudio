@@ -1,29 +1,90 @@
 {
   "yearsOfExperience": 5,
+  "whyWe": [
+    {
+      "title": "Transparent working conditions.",
+      "description": "Agreement with guarantees and obligations."
+    },
+    {
+      "title": "Flexible payment system.",
+      "description": "70/30, 60/40, 50/50 per stage."
+    },
+    {
+      "title": "Constant feedback.",
+      "description": "In communication channels convenient for you."
+    },
+    {
+      "title": "Reporting on work stages.",
+      "description": "See the results in real time."
+    },
+    {
+      "title": "Training to work with the site, technical. support.",
+      "description": "Consultations and recommendations after launch."
+    },
+    {
+      "title": "Demo version admin. site panels.",
+      "description": "Test access to get acquainted with site management."
+    },
+    {
+      "title": "Maximum involvement in your business.",
+      "description": "Agreement with guarantees and obligations."
+    },
+    {
+      "title": "Individual design and development.",
+      "description": "Clean and optimized code, responsive design for your target audience."
+    },
+    {
+      "title": "SEO optimized code.",
+      "description": "Our sites are technically optimized for SEO promotion and meet the latest Google requirements."
+    }
+  ],
+  "news": [
+    {
+      "title": "Solar Solutions Messe in Düsseldorf",
+      "description": "Solar Solutions Messe in Düsseldorf",
+      "image": "/img/news1.jpg"
+    },
+    {
+      "title": "Solar Solutions Messe in Düsseldorf",
+      "description": "Solar Solutions Messe in Düsseldorf",
+      "image": "/img/news2.jpg"
+    },
+    {
+      "title": "Solar Solutions Messe in Düsseldorf",
+      "description": "Solar Solutions Messe in Düsseldorf",
+      "image": "/img/news3.jpg"
+    }
+  ],
   "services": [
     {
       "title": "Web-Development",
-      "description": "Engaging and responsive websites for a strong online presence"
+      "description": "Engaging and responsive websites for a strong online presence",
+      "icon": "/img/car.svg"
     },
     {
       "title": "UX/UI Design",
-      "description": "Intuitive and user-friendly interfaces for seamless user experiences"
+      "description": "Intuitive and user-friendly interfaces for seamless user experiences",
+      "icon": "/img/web.svg"
     },
     {
       "title": "AI-Based Solutions",
-      "description": "Innovative AI-driven technologies to enhance automation and decision-making processes"
+      "description": "Innovative AI-driven technologies to enhance automation and decision-making processes",
+      "icon": "/img/Capa.svg"
     },
     {
       "title": "Product Development",
-      "description": "Strategic planning and implementation for successful product launches and operational efficiency"
+      "description": "Strategic planning and implementation for successful product launches and operational efficiency",
+      "icon": "/img/Human.svg"
     },
     {
       "title": "SMM & Target",
-      "description": "Effective social media management and targeted advertising to boost your online visibility"
+      "description": "Effective social media management and targeted advertising to boost your online visibility",
+      "icon": "/img/car.svg"
     },
     {
       "title": "Presentation Design",
-      "description": "Crafting visually stunning presentations to elevate your message effectively"
+      "description": "Crafting visually stunning presentations to elevate your message effectively",
+      "icon": "/img/Capa1.svg"
     }
   ],
   "reviews": [
@@ -35,7 +96,6 @@
       "name": "Clickwerk",
       "review": "Ocean Script demonstrated outstanding web design skills by creating a top-notch design for our web store. Their creativity and attention to detail led to a result that exceeded our expectations!"
     },
-
     {
       "name": "Natalia",
       "review": "Working with Ocean Script was a game-changer for our business. Their web development expertise brought our online presence to a whole new level. The team's dedication and creativity truly set them apart."
