@@ -28,7 +28,7 @@
       >
         <div class="relative self-start xl:self-center">
           <SvgoCustomVector
-            class="absolute left-[50%] top-[50%] !h-[200%] !w-auto translate-x-[-50%] translate-y-[-50%] stroke-blue text-transparent"
+            class="filter_img absolute left-[50%] top-[50%] !h-[200%] !w-auto translate-x-[-50%] translate-y-[-50%] stroke-blue text-transparent"
           />
           <h3
             class="font-secondary text-[25px] font-semibold lowercase text-black md:text-[38px] xl:text-[35px] 3xl:text-[60px]"
@@ -47,4 +47,8 @@
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+  .filter_img {
+    filter: brightness(90%) sepia(100%) hue-rotate(0deg) saturate(0) opacity(100%);
+  }
+</style>
