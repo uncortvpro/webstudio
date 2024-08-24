@@ -33,7 +33,7 @@
     @closeModal="switchModalDetails(false)"
   >
     <div class="flex flex-col gap-[15px] md:flex-row xl:gap-[20px]">
-      <NuxtImg class="md:w-full md:max-w-[555px]" :src="useBaseUrl(news?.image)" />
+      <img class="md:w-full md:max-w-[555px]" :src="useBaseUrl(news?.image)" />
       <div class="mt-[15px] lg:mt-0">
         <h3 class="text-[20px] uppercase text-black md:text-[30px] xl:text-[45px]">
           {{ news.title }}
