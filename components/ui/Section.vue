@@ -8,7 +8,7 @@
 
 <template>
   <section>
-    <div :class="cn('container', ui?.container)">
+    <div :class="cn('container py-5', ui?.container)">
       <div
         class="mb-[20px] flex items-center gap-[10px] md:mb-[25px] md:gap-[12px] xl:mb-[35px] xl:gap-[15px]"
       >
