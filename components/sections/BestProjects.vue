@@ -117,7 +117,7 @@
     "
   >
     <div
-      class="duration_show_section relative animate-fade-up bg-[rgba(141,122,100,0.1)] py-[25p] md:py-[35px] xl:py-[44px]"
+      class="duration_show_section relative animate-fade-up bg-[rgba(141,122,100,0.1)] py-[25px] md:py-[35px] xl:py-[44px]"
       v-show="isShowSection"
     >
       <UiSection class="relative">
@@ -264,6 +264,6 @@
 
 <style>
   .swiper_tabs_button .swiper-wrapper {
-    @apply xl:pl-padding-container-x-xl pl-padding-container-x md:pl-padding-container-x-md 3xl:pl-0;
+    @apply pl-padding-container-x md:pl-padding-container-x-md xl:pl-padding-container-x-xl 3xl:pl-0;
   }
 </style>
