@@ -8,15 +8,7 @@ export default defineNuxtConfig({
       baseUrl: process.env.NUXT_APP_BASE_URL,
     },
   },
-  modules: [
-    '@nuxt/ui',
-    'nuxt-svgo',
-    '@pinia/nuxt',
-    '@vueuse/nuxt',
-    'nuxt-swiper',
-    '@davestewart/nuxt-scrollbar',
-    '@nuxt/image',
-  ],
+  modules: ['@nuxt/ui', 'nuxt-svgo', '@pinia/nuxt', '@vueuse/nuxt', 'nuxt-swiper', '@davestewart/nuxt-scrollbar', '@nuxt/image', 'nuxt-delay-hydration'],
   ssr: false,
   css: ['~/assets/css/fonts.css'],
   alias: {
@@ -34,6 +26,9 @@ export default defineNuxtConfig({
       // 'scrollbar',
       'grid',
     ],
+  },
+  delayHydration: {
+    mode: 'manual'
   },
   svgo: {
     autoImportPath: './assets/img/svg/',
