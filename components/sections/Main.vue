@@ -91,6 +91,7 @@
     overflow: hidden;
     line-height: 130%;
     white-space: nowrap;
+    animation-delay: 3s;
     animation:
       printed-text 3s steps(51),
       flashin-border 0.75s step-start infinite;
