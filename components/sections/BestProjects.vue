@@ -116,148 +116,154 @@
       })
     "
   >
-    <UiSection
-      v-show="isShowSection"
+    <div
       class="duration_show_section relative animate-fade-up bg-[rgba(141,122,100,0.1)] py-[25p] md:py-[35px] xl:py-[44px]"
+      v-show="isShowSection"
     >
-      <template #title> best projects </template>
-      <template #content>
-        <div class="relative z-10">
-          <Swiper
-            class="swiper_main w-full"
-            :slides-per-view="'auto'"
-            :spaceBetween="10"
-            :breakpoints="{
-              375: {
-                spaceBetween: 10,
-              },
-              768: {
-                spaceBetween: 15,
-              },
-              1300: {
-                spaceBetween: 30,
-              },
-            }"
+      <UiSection class="relative">
+        <template #title> best projects </template>
+      </UiSection>
+      <div class="3xl:container">
+        <Swiper
+          class="swiper_tabs_button w-full"
+          :slides-per-view="'auto'"
+          :spaceBetween="10"
+          :breakpoints="{
+            375: {
+              spaceBetween: 10,
+            },
+            768: {
+              spaceBetween: 15,
+            },
+            1300: {
+              spaceBetween: 30,
+            },
+          }"
+        >
+          <SwiperSlide
+            v-for="(tab, index) in tabs"
+            :key="index"
+            class="!w-fit overflow-hidden rounded-[5px]"
           >
-            <SwiperSlide
-              v-for="(tab, index) in tabs"
-              :key="index"
-              class="!w-fit overflow-hidden rounded-[5px]"
+            <UiButton
+              :class="
+                cn(
+                  'w-fit rounded-[50px] border border-black px-[16px] py-[5px] text-[10px] lowercase text-black duration-200 md:px-[22px] md:py-[10px] md:text-[16px] xl:border-[2px] xl:px-[43px] xl:py-[11px] xl:text-[25px]',
+                  {
+                    'bg-black text-white': activeTadId === tab.id,
+                  }
+                )
+              "
+              @click="changeTab(tab.id)"
+              >{{ tab.label }}</UiButton
             >
-              <UiButton
-                :class="
-                  cn(
-                    'w-fit rounded-[50px] border border-black px-[16px] py-[5px] text-[10px] lowercase text-black duration-200 md:px-[22px] md:py-[10px] md:text-[16px] xl:border-[2px] xl:px-[43px] xl:py-[11px] xl:text-[25px]',
-                    {
-                      'bg-black text-white': activeTadId === tab.id,
-                    }
-                  )
-                "
-                @click="changeTab(tab.id)"
-                >{{ tab.label }}</UiButton
-              >
-            </SwiperSlide>
-          </Swiper>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      <div class="container relative z-10">
+        <div
+          :key="activeTadId"
+          class="mt-[15px] grid animate-fade-up auto-rows-[minmax(0,30%)] grid-cols-1 gap-[10px] text-white md:mt-[20px] md:auto-rows-[minmax(0,37vw)] md:grid-cols-12 md:gap-[13px] xl:mt-[38px] xl:gap-[30px] 4xl:auto-rows-[minmax(0,550px)]"
+        >
           <div
-            :key="activeTadId"
-            class="mt-[15px] grid animate-fade-up auto-rows-[minmax(0,30%)] grid-cols-1 gap-[10px] text-white md:mt-[20px] md:auto-rows-[minmax(0,37vw)] md:grid-cols-12 md:gap-[13px] xl:mt-[38px] xl:gap-[30px] 4xl:auto-rows-[minmax(0,550px)]"
+            :class="
+              cn(
+                'group relative overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]',
+                {
+                  'md:!col-span-12': activeTab?.projects.length === 3,
+                  'cursor-pointer': activeTab?.projects[0]?.link,
+                }
+              )
+            "
           >
-            <div
-              :class="
-                cn(
-                  'group relative overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]',
-                  {
-                    'md:!col-span-12': activeTab?.projects.length === 3,
-                    'cursor-pointer': activeTab?.projects[0]?.link,
-                  }
-                )
-              "
-            >
-              <UiButton
-                class="absolute left-0 top-0 z-10 h-full w-full"
-                :to="activeTab?.projects[0]?.link"
-                v-if="activeTab?.projects[0]?.link"
-              ></UiButton>
-              <img
-                class="size-full object-cover object-top duration-hover group-hover:scale-110"
-                loading="lazy"
-                :src="activeTab?.projects[0].image"
-                :alt="activeTab?.projects[0]?.alt"
-              />
-            </div>
-            <div
-              :class="
-                cn(
-                  'group relative overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]',
-                  {
-                    'cursor-pointer': activeTab?.projects[1]?.link,
-                  }
-                )
-              "
-            >
-              <UiButton
-                class="absolute left-0 top-0 z-10 h-full w-full"
-                :to="activeTab?.projects[1]?.link"
-                v-if="activeTab?.projects[1]?.link"
-              ></UiButton>
-              <img
-                class="size-full object-cover object-top duration-hover group-hover:scale-110"
-                loading="lazy"
-                :src="activeTab?.projects[1].image"
-                :alt="activeTab?.projects[1]?.alt"
-              />
-            </div>
-            <div
-              :class="
-                cn(
-                  'group  relative overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]',
-                  {
-                    'md:!col-span-5': activeTab?.projects.length === 3,
-                    'cursor-pointer': activeTab?.projects[2]?.link,
-                  }
-                )
-              "
-            >
-              <UiButton
-                class="absolute left-0 top-0 z-10 h-full w-full"
-                :to="activeTab?.projects[2]?.link"
-                v-if="activeTab?.projects[2]?.link"
-              ></UiButton>
-              <img
-                class="size-full object-cover object-top duration-hover group-hover:scale-110"
-                loading="lazy"
-                :src="activeTab?.projects[2].image"
-                :alt="activeTab?.projects[2]?.alt"
-              />
-            </div>
-            <div
-              v-if="activeTab?.projects[3]"
-              :class="
-                cn(
-                  'group relative overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]',
-                  {
-                    'cursor-pointer': activeTab?.projects[3]?.link,
-                  }
-                )
-              "
-            >
-              <UiButton
-                class="absolute left-0 top-0 z-10 h-full w-full"
-                :to="activeTab?.projects[3]?.link"
-                v-if="activeTab?.projects[3]?.link"
-              ></UiButton>
-              <img
-                class="size-full object-cover duration-hover group-hover:scale-110"
-                loading="lazy"
-                :src="activeTab?.projects[3].image"
-                :alt="activeTab?.projects[3]?.alt"
-              />
-            </div>
+            <UiButton
+              class="absolute left-0 top-0 z-10 h-full w-full"
+              :to="activeTab?.projects[0]?.link"
+              v-if="activeTab?.projects[0]?.link"
+            ></UiButton>
+            <img
+              class="size-full object-cover object-top duration-hover group-hover:scale-110"
+              loading="lazy"
+              :src="activeTab?.projects[0].image"
+              :alt="activeTab?.projects[0]?.alt"
+            />
+          </div>
+          <div
+            :class="
+              cn(
+                'group relative overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]',
+                {
+                  'cursor-pointer': activeTab?.projects[1]?.link,
+                }
+              )
+            "
+          >
+            <UiButton
+              class="absolute left-0 top-0 z-10 h-full w-full"
+              :to="activeTab?.projects[1]?.link"
+              v-if="activeTab?.projects[1]?.link"
+            ></UiButton>
+            <img
+              class="size-full object-cover object-top duration-hover group-hover:scale-110"
+              loading="lazy"
+              :src="activeTab?.projects[1].image"
+              :alt="activeTab?.projects[1]?.alt"
+            />
+          </div>
+          <div
+            :class="
+              cn(
+                'group  relative overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]',
+                {
+                  'md:!col-span-5': activeTab?.projects.length === 3,
+                  'cursor-pointer': activeTab?.projects[2]?.link,
+                }
+              )
+            "
+          >
+            <UiButton
+              class="absolute left-0 top-0 z-10 h-full w-full"
+              :to="activeTab?.projects[2]?.link"
+              v-if="activeTab?.projects[2]?.link"
+            ></UiButton>
+            <img
+              class="size-full object-cover object-top duration-hover group-hover:scale-110"
+              loading="lazy"
+              :src="activeTab?.projects[2].image"
+              :alt="activeTab?.projects[2]?.alt"
+            />
+          </div>
+          <div
+            v-if="activeTab?.projects[3]"
+            :class="
+              cn(
+                'group relative overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]',
+                {
+                  'cursor-pointer': activeTab?.projects[3]?.link,
+                }
+              )
+            "
+          >
+            <UiButton
+              class="absolute left-0 top-0 z-10 h-full w-full"
+              :to="activeTab?.projects[3]?.link"
+              v-if="activeTab?.projects[3]?.link"
+            ></UiButton>
+            <img
+              class="size-full object-cover duration-hover group-hover:scale-110"
+              loading="lazy"
+              :src="activeTab?.projects[3].image"
+              :alt="activeTab?.projects[3]?.alt"
+            />
           </div>
         </div>
-      </template>
-    </UiSection>
+      </div>
+    </div>
   </div>
 </template>
 
-<style scoped></style>
+<style>
+  .swiper_tabs_button .swiper-wrapper {
+    @apply xl:pl-padding-container-x-xl pl-padding-container-x md:pl-padding-container-x-md 3xl:pl-0;
+  }
+</style>
