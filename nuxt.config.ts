@@ -38,6 +38,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en' // замените 'en' на нужный вам язык
+      },
       title: 'Web Development, UX/UI Design, AI Solutions, SMM | Ocean Script',
       meta: [
         {

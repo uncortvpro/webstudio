@@ -15,6 +15,7 @@
         :isActive="isActive"
         class="relative z-[60] lg:hidden"
         @click="isActive = !isActive"
+        aria-label="Navigation"
       />
       <CommonMenuMobile
         :isActive="isActive"
