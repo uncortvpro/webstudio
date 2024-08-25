@@ -39,7 +39,7 @@
         <div
           class="mt-[35px] flex flex-col items-center self-center sm:mt-[-5%] lg:col-span-2 lg:mt-auto"
         >
-          <img class="max-w-[400px] lg:max-w-[538px]" src="/img/iPhone15Mockup.webp" alt="" />
+          <img class="max-w-[400px] lg:max-w-[538px]" src="/img/iPhone15MockupNew.webp" alt="" />
         </div>
         <CommonOurAdvances
           :class="

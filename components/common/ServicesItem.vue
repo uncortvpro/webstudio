@@ -6,7 +6,7 @@
 
 <template>
   <div
-    class="flex h-full flex-col justify-between rounded-[30px] bg-[#D9D9D9] px-[30px] py-[36px] md:rounded-[42px]"
+    class="flex h-full flex-col justify-between rounded-[30px] custom-bg px-[30px] py-[36px] md:rounded-[42px]"
   >
     <div class="flex items-center gap-[7px] md:gap-[10px]">
       <h3 class="text-[15px] font-medium lowercase text-black md:text-[23px] xl:text-[30px]">
@@ -28,4 +28,8 @@
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.custom-bg {
+  background-color: rgba(217, 217, 217, 0.3);
+}
+</style>
