@@ -42,6 +42,7 @@ export default <Partial<Config>>{
       spacing: {
         'padding-container-x': VAR.CONTAINER_PADDING_X,
         'padding-container-x-md': VAR.CONTAINER_PADDING_X_MD,
+        'padding-container-x-xl': VAR.CONTAINER_PADDING_X_XL,
       },
       opacity: {
         hover: '60%',

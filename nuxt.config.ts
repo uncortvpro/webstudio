@@ -8,7 +8,16 @@ export default defineNuxtConfig({
       baseUrl: process.env.NUXT_APP_BASE_URL,
     },
   },
-  modules: ['@nuxt/ui', 'nuxt-svgo', '@pinia/nuxt', '@vueuse/nuxt', 'nuxt-swiper', '@davestewart/nuxt-scrollbar', '@nuxt/image', 'nuxt-delay-hydration'],
+  modules: [
+    '@nuxt/ui',
+    'nuxt-svgo',
+    '@pinia/nuxt',
+    '@vueuse/nuxt',
+    'nuxt-swiper',
+    '@davestewart/nuxt-scrollbar',
+    '@nuxt/image',
+    'nuxt-delay-hydration',
+  ],
   ssr: false,
   css: ['~/assets/css/fonts.css'],
   alias: {
@@ -39,7 +48,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        lang: 'en' // замените 'en' на нужный вам язык
+        lang: 'en', // замените 'en' на нужный вам язык
       },
       title: 'Web Development, UX/UI Design, AI Solutions, SMM | Ocean Script',
       meta: [
@@ -76,10 +85,7 @@ export default defineNuxtConfig({
           }),
         },
       ],
-      link: [
-        fontsPreload,
-        { rel: 'preload', href: '/img/iPhone15MockupNew.webp', as: 'image' }
-      ]
+      link: [...fontsPreload, { rel: 'preload', href: '/img/iPhone15MockupNew.webp', as: 'image' }],
     },
     baseURL: process.env.NUXT_APP_BASE_URL,
     buildAssetsDir: 'assets',
