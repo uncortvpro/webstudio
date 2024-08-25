@@ -180,6 +180,7 @@
               ></UiButton>
               <img
                 class="size-full object-cover object-top duration-hover group-hover:scale-110"
+                loading="lazy"
                 :src="activeTab?.projects[0].image"
                 :alt="activeTab?.projects[0]?.alt"
               />
@@ -201,6 +202,7 @@
               ></UiButton>
               <img
                 class="size-full object-cover object-top duration-hover group-hover:scale-110"
+                loading="lazy"
                 :src="activeTab?.projects[1].image"
                 :alt="activeTab?.projects[1]?.alt"
               />
@@ -223,6 +225,7 @@
               ></UiButton>
               <img
                 class="size-full object-cover object-top duration-hover group-hover:scale-110"
+                loading="lazy"
                 :src="activeTab?.projects[2].image"
                 :alt="activeTab?.projects[2]?.alt"
               />
@@ -245,6 +248,7 @@
               ></UiButton>
               <img
                 class="size-full object-cover duration-hover group-hover:scale-110"
+                loading="lazy"
                 :src="activeTab?.projects[3].image"
                 :alt="activeTab?.projects[3]?.alt"
               />

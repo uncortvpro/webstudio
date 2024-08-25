@@ -37,6 +37,7 @@
         :src="logo"
         alt="Logo 1"
         class="filter_img mx-4 h-12"
+        loading="lazy"
       />
     </Vue3Marquee>
   </div>

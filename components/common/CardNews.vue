@@ -12,7 +12,7 @@
 <template>
   <UiButton class="flex flex-col items-stretch justify-between" @click="switchModalDetails(true)">
     <div class="flex flex-col items-stretch">
-      <img class="rounded-[20px] border border-black" :src="useBaseUrl(news?.image)" />
+      <img class="rounded-[20px] border border-black" loading="lazy" :src="useBaseUrl(news?.image)" />
       <h3
         class="mt-[15px] text-left text-[15px] text-black md:text-[18px] xl:mt-[20px] xl:text-[22px]"
       >
