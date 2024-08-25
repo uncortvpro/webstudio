@@ -14,13 +14,11 @@
       <LayoutHeader />
       <div class="grid grid-cols-1 lg:grid-cols-6">
         <div class="max-w-[1179px] lg:col-span-4">
-          <DelayHydration>
-            <p
-              class="animate_print_text mt-[15px] text-[12px] text-black md:mt-[30px] md:text-[20px] 4xl:mt-[50px] 4xl:text-[25px]"
-            >
-              Web agency Ocean Script
-            </p>
-          </DelayHydration>
+          <p
+            class="mt-[15px] text-[12px] text-black md:mt-[30px] md:text-[20px] 4xl:mt-[50px] 4xl:text-[25px]"
+          >
+            Web agency Ocean Script
+          </p>
           <h2
             class="mt-[10px] text-[30px] font-semibold leading-[120%] text-black md:mt-[15px] md:text-[50px] 3xl:text-[75px] 4xl:mt-[20px]"
           >

@@ -27,9 +27,6 @@ export default defineNuxtConfig({
       'grid',
     ],
   },
-  delayHydration: {
-    mode: 'manual'
-  },
   svgo: {
     autoImportPath: './assets/img/svg/',
   },
