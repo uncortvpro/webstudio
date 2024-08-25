@@ -15,7 +15,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-6">
         <div class="max-w-[1179px] lg:col-span-4">
           <p
-            class="mt-[15px] text-[12px] text-black md:mt-[30px] md:text-[20px] 4xl:mt-[50px] 4xl:text-[25px]"
+            class="animate_print_text mt-[15px] text-[12px] text-black md:mt-[30px] md:text-[20px] 4xl:mt-[50px] 4xl:text-[25px]"
           >
             Web agency Ocean Script
           </p>
