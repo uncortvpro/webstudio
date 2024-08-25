@@ -73,7 +73,10 @@ export default defineNuxtConfig({
           }),
         },
       ],
-      link: fontsPreload,
+      link: [
+        fontsPreload,
+        { rel: 'preload', href: '/img/iPhone15MockupNew.webp', as: 'image' }
+      ]
     },
     baseURL: process.env.NUXT_APP_BASE_URL,
     buildAssetsDir: 'assets',
