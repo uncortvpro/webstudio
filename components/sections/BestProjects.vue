@@ -117,8 +117,8 @@
     "
   >
     <div
-      class="duration_show_section relative animate-fade-up bg-[rgba(141,122,100,0.1)] py-[25px] md:py-[35px] xl:py-[44px]"
       v-show="isShowSection"
+      class="duration_show_section relative animate-fade-up bg-[rgba(141,122,100,0.1)] py-[25px] md:py-[35px] xl:py-[44px]"
     >
       <UiSection class="relative">
         <template #title> best projects </template>
@@ -177,10 +177,10 @@
             "
           >
             <UiButton
-              class="absolute left-0 top-0 z-10 h-full w-full"
-              :to="activeTab?.projects[0]?.link"
               v-if="activeTab?.projects[0]?.link"
-            ></UiButton>
+              class="absolute left-0 top-0 z-10 size-full"
+              :to="activeTab?.projects[0]?.link"
+            />
             <img
               class="size-full object-cover object-top duration-hover group-hover:scale-110"
               loading="lazy"
@@ -199,10 +199,10 @@
             "
           >
             <UiButton
-              class="absolute left-0 top-0 z-10 h-full w-full"
-              :to="activeTab?.projects[1]?.link"
               v-if="activeTab?.projects[1]?.link"
-            ></UiButton>
+              class="absolute left-0 top-0 z-10 size-full"
+              :to="activeTab?.projects[1]?.link"
+            />
             <img
               class="size-full object-cover object-top duration-hover group-hover:scale-110"
               loading="lazy"
@@ -222,10 +222,10 @@
             "
           >
             <UiButton
-              class="absolute left-0 top-0 z-10 h-full w-full"
-              :to="activeTab?.projects[2]?.link"
               v-if="activeTab?.projects[2]?.link"
-            ></UiButton>
+              class="absolute left-0 top-0 z-10 size-full"
+              :to="activeTab?.projects[2]?.link"
+            />
             <img
               class="size-full object-cover object-top duration-hover group-hover:scale-110"
               loading="lazy"
@@ -245,10 +245,10 @@
             "
           >
             <UiButton
-              class="absolute left-0 top-0 z-10 h-full w-full"
-              :to="activeTab?.projects[3]?.link"
               v-if="activeTab?.projects[3]?.link"
-            ></UiButton>
+              class="absolute left-0 top-0 z-10 size-full"
+              :to="activeTab?.projects[3]?.link"
+            />
             <img
               class="size-full object-cover duration-hover group-hover:scale-110"
               loading="lazy"
