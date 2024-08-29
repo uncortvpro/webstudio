@@ -40,6 +40,13 @@
   >
     <div class="flex flex-col gap-[15px] pb-[20px] md:flex-row xl:gap-[20px]">
       <img class="md:w-full md:max-w-[555px]" :src="useBaseUrl(news?.image)" />
+      <!-- <div class="relative pt-[15%] md:pl-[25%] md:max-w-[555px]">
+        <img
+          class="absolute left-0 top-0 size-full rounded-[20px]"
+          loading="lazy"
+          :src="useBaseUrl(news?.image)"
+        />
+      </div> -->
       <div class="mt-[15px] lg:mt-0">
         <h3 class="text-[20px] uppercase text-black md:text-[30px] xl:text-[45px]">
           {{ news.title }}

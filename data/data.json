@@ -47,7 +47,7 @@
     {
       "title": "Microanimations in UX/UI: How Small Details Can Enhance Interfaces",
       "description": "Microanimations are small yet significant elements that greatly improve the user experience on websites and mobile apps. In 2024, microanimations are becoming a key trend in UX/UI design. These subtle animations help users better understand interfaces, improving navigation and making interactions more intuitive. For example, an animation when clicking a button can confirm the successful completion of an action, and a slight effect when hovering over an element can indicate that it is interactive. Microanimations can also enhance the emotional connection with a product, making it more 'human' and engaging. Companies that implement microanimations in their products report improved user experience, increased engagement, and higher user satisfaction.",
-      "image": "/img/news2.jpg"
+      "image": "/img/news2.jpeg"
     },
     {
       "title": "SMM Trends: New Social Media Algorithms and Their Impact on Targeting",
@@ -59,32 +59,38 @@
     {
       "title": "Web-Development",
       "description": "Engaging and responsive websites for a strong online presence",
-      "icon": "/img/car.svg"
+      "icon": "/img/car.svg",
+      "allDescription": "In a world where online presence plays a crucial role in business success, it's essential to have a website that not only captures attention but also converts visitors into customers. We specialize in creating high-quality websites that blend aesthetics, functionality, and cutting-edge technology. Our development process begins with a deep understanding of your business goals and target audience needs. We design unique, responsive layouts that look great on all devices — from smartphones to desktops. During development, we also focus on performance optimization and security, ensuring fast page loads and data protection. Your online platform will be integrated with modern analytics and marketing tools, allowing you to track success and make data-driven improvements."
     },
     {
       "title": "UX/UI Design",
       "description": "Intuitive and user-friendly interfaces for seamless user experiences",
-      "icon": "/img/web.svg"
+      "icon": "/img/web.svg",
+      "allDescription": "The success of a digital product largely depends on the quality of its interface. Our UX/UI designers create interfaces that combine attractiveness with ease of use. We start by conducting user research and behavior analysis to understand how users interact with products. This approach enables us to design interfaces that are intuitive and easily adaptable to different users' needs. We adhere to a minimalist design principle, focusing on making every interface element functional and conducive to achieving user goals. Our solutions not only enhance the user experience but also help businesses achieve higher conversions and retain customers. We also thoroughly test all designed interfaces to ensure they work flawlessly and meet user expectations."
     },
     {
       "title": "AI-Based Solutions",
       "description": "Innovative AI-driven technologies to enhance automation and decision-making processes",
-      "icon": "/img/Capa.svg"
+      "icon": "/img/Capa.svg",
+      "allDescription": "Artificial intelligence (AI) is becoming an integral part of modern business processes, enabling task automation and improving decision-making quality. Our AI-based solutions are designed to increase your business's efficiency, reduce costs, and boost profits. We offer a wide range of services, from implementing simple automation algorithms to developing complex machine learning systems and big data analytics. Our experts will help you integrate AI into existing business processes or create new, more efficient approaches to data and operations management. With AI, you can quickly and accurately process large volumes of data, gain valuable insights, and respond promptly to market changes."
     },
     {
       "title": "Product Development",
       "description": "Strategic planning and implementation for successful product launches and operational efficiency",
-      "icon": "/img/Human.svg"
+      "icon": "/img/Human.svg",
+      "allDescription": "Product development is a complex process that requires deep analysis, planning, and coordination at all stages. We help companies navigate this path with minimal risk and maximum results. Our product development services cover all stages — from market research and concept creation to scaling and supporting the launched product. We start by immersing ourselves in your business, studying the target audience and the market in which you plan to operate. Then we develop a strategy that includes creating an MVP (minimum viable product), testing it, and gradually adding new features. Our team supports you at every stage, ensuring clear coordination, meeting deadlines, and staying within budget. As a result, you get a product that meets market needs and has all the chances for a successful launch and growth."
     },
     {
       "title": "SMM & Target",
       "description": "Effective social media management and targeted advertising to boost your online visibility",
-      "icon": "/img/car.svg"
+      "icon": "/img/car.svg",
+      "allDescription": "Success on social media requires more than just having active accounts; it requires a strategic approach to content creation and advertising campaigns. We offer comprehensive social media management and targeted advertising services to help your business attract attention and gain the trust of your target audience. Our approach includes developing a content strategy, creating unique visual and text materials, setting up targeted ads, and continuously monitoring results. We analyze data and adjust strategies to ensure maximum campaign effectiveness and increase ROI. Your online visibility will grow, and audience engagement and conversions will thrive thanks to our attention to detail and use of the latest analytics tools."
     },
     {
       "title": "Presentation Design",
       "description": "Crafting visually stunning presentations to elevate your message effectively",
-      "icon": "/img/Capa1.svg"
+      "icon": "/img/Capa1.svg",
+      "allDescription": "When it comes to creating a presentation, it's essential not only to convey information but also to do so in a bright and convincing way. Our team of designers specializes in creating professional presentations that help you stand out and effectively communicate your message to the audience. We develop unique templates, select stylish visual elements and graphics so that each presentation is not only informative but also memorable. Our presentations are ideal for various purposes — whether it's a demonstration to investors, a new product presentation, or employee training. We also offer services for creating animations and interactive elements that make your slides even more engaging and impactful. With our help, your presentation will become a powerful tool for achieving your goals."
     }
   ],
   "reviews": [
