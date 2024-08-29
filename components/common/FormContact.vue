@@ -58,14 +58,12 @@
         <UiInputPrimary v-model="inputs.email" required placeholder="Your email" type="email" />
         <UiSelect
           v-model="inputs.service"
-
           :currentValue="inputs.service"
           :options="servicesOptions"
           placeholder="service you’re interested in"
         />
         <UiSelect
           v-model="inputs.budget"
-
           :currentValue="inputs.budget"
           :options="[
             '$500 - $5,000',
@@ -74,7 +72,7 @@
             '$25,000 - $50,000,',
             'Over 50,000$',
           ]"
-          placeholder="$500 - $5,000"
+          placeholder="your budget"
         />
       </div>
       <UiButtonPrimary type="submit" class="mt-[25px] self-center md:mt-[30px] xl:mt-[50px]"
