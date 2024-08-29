@@ -45,10 +45,7 @@
   <div
     class="max-w-[485px] rounded-[25px] px-[15px] py-[25px] md:px-[32px] md:py-[30px] xl:max-w-[800px] xl:rounded-[50px] xl:px-[92px] xl:py-[45px]"
   >
-    <UiModalSuccess
-      v-model="isModalSuccess"
-      :message="`Thank you, we'll be in touch!`"
-    ></UiModalSuccess>
+    <UiModalSuccess v-model="isModalSuccess" :message="`Thank you, we'll be in touch!`" />
     <form action="#" class="flex flex-col" @submit.prevent="sendMessage">
       <h5
         class="text-center font-secondary text-[18px] font-semibold lowercase text-black md:text-[23px] xl:text-[28px]"
@@ -60,15 +57,15 @@
         <UiInputPrimary v-model="inputs.phone" placeholder="Your pnone number" />
         <UiInputPrimary v-model="inputs.email" required placeholder="Your email" type="email" />
         <UiSelect
-          class="relative z-[11]"
           v-model="inputs.service"
+
           :currentValue="inputs.service"
           :options="servicesOptions"
           placeholder="service you’re interested in"
         />
         <UiSelect
-          class="relative z-[10]"
           v-model="inputs.budget"
+
           :currentValue="inputs.budget"
           :options="[
             '$500 - $5,000',

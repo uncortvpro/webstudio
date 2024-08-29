@@ -34,7 +34,7 @@
       style="text-transform: inherit"
       :class="
         cn(
-          'input_primary_height input_primary_text  input_primary_padding_x relative z-40 flex w-full items-center justify-between !lowercase !duration-0 hover:!opacity-100',
+          'input_primary_height input_primary_text  input_primary_padding_x relative  flex w-full items-center justify-between !lowercase !duration-0 hover:!opacity-100',
           {
             '!text-placeholder': !currentValue,
             '!justify-end': !currentValue && !placeholder,
