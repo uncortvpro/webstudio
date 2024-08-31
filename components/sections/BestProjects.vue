@@ -120,10 +120,10 @@
       v-show="isShowSection"
       class="duration_show_section relative animate-fade-up bg-[rgba(141,122,100,0.1)] py-[25px] md:py-[35px] xl:py-[44px]"
     >
-      <UiSection class="relative mb-1">
+      <UiSection class="relative">
         <template #title> recent projects </template>
       </UiSection>
-      <div class="3xl:container">
+      <div class="3xl:container mt-0">
         <Swiper
           class="swiper_tabs_button w-full"
           :slides-per-view="'auto'"
