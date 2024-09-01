@@ -40,7 +40,7 @@
           alt: 'Size-crm project example demonstrating effective web development solutions',
         },
         {
-          image: useBaseUrl('/img/kuzka_shop.png'),
+          image: useBaseUrl('/img/kuzka_shop.webp'),
           link: '',
           alt: 'Product Development and Operations Setup',
         },
