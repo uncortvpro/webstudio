@@ -1,99 +1,5 @@
 <script setup lang="ts">
-  // import { useElementVisibility } from '@vueuse/core';
-
-  const tabs = [
-    // {
-    //   id: 1,
-    //   label: 'all projects',
-    //   projects: [
-    //     {
-    //       image: '/img/olimpia_crm.png',
-    //     },
-    //     {
-    //       image: '/img/olimpia_crm.png',
-    //     },
-    //     {
-    //       image: '/img/olimpia_crm.png',
-    //     },
-    //     {
-    //       image: '/img/olimpia_crm.png',
-    //     },
-    //   ],
-    // },
-    {
-      id: 2,
-      label: 'Web-development',
-      projects: [
-        {
-          image: useBaseUrl('/img/ukrainemart_2.png'),
-          link: 'https://ukrainemart.com/',
-          alt: 'Ukrainemart - web development project',
-        },
-        {
-          image: useBaseUrl('/img/clickwerk.jpg'),
-          link: 'https://clickwerk.eu/',
-          alt: 'Clickwerk web development project showcasing responsive design and modern UI',
-        },
-        {
-          image: useBaseUrl('/img/size_crm.png'),
-          link: 'https://size-crm.com/',
-          alt: 'Size-crm project example demonstrating effective web development solutions',
-        },
-        {
-          image: useBaseUrl('/img/kuzka_shop.png'),
-          link: '',
-          alt: 'Product Development and Operations Setup',
-        },
-      ],
-    },
-    {
-      id: 3,
-      label: 'Ui/ux design',
-      projects: [
-        {
-          image: useBaseUrl('/img/LogicGov.png'),
-          link: '',
-          alt: 'UX/UI design mockup showcasing intuitive user interface',
-        },
-        {
-          image: useBaseUrl('/img/Enterprice_gpt.png'),
-          link: '',
-          alt: 'Interactive user experience design with modern layout',
-        },
-        {
-          image: useBaseUrl('/img/kwiga.png'),
-          link: '',
-          alt: 'High-fidelity prototype of e-commerce app with user-friendly navigation',
-        },
-        {
-          image: useBaseUrl('/img/CryptoEx.png'),
-          link: '',
-          alt: 'Modern web design with engaging user interface elements',
-        },
-      ],
-    },
-    {
-      id: 4,
-      label: 'presentation design',
-      projects: [
-        {
-          image: useBaseUrl('/img/pres_1.png'),
-          link: '',
-          alt: 'Professional presentation design with modern slide layout',
-        },
-        {
-          image: useBaseUrl('/img/size_crm_2.png'),
-          link: '',
-          alt: 'Size crm visually engaging presentation slide featuring infographic',
-        },
-        {
-          image: useBaseUrl('/img/ukrainemart_2.png'),
-          link: '',
-          alt: 'Ukrainemart Presentation slide featuring a mix of text and graphics',
-        },
-      ],
-    },
-  ];
+  const { resentProjects: tabs } = useData();
 
   const activeTadId = ref(2);
   const activeTab = computed(() => tabs.find((el) => el.id === activeTadId.value));
@@ -105,6 +11,11 @@
   const changeTab = (tabId: number) => {
     activeTadId.value = tabId;
   };
+
+  function checkIndexProject(index: number) {
+    const mod = index % 6;
+    return mod === 1 || mod === 2 || mod === 5 || mod === 6;
+  }
 </script>
 
 <template>
@@ -166,94 +77,47 @@
           class="mt-[15px] grid animate-fade-up auto-rows-[minmax(0,30%)] grid-cols-1 gap-[10px] text-white md:mt-[20px] md:auto-rows-[minmax(0,37vw)] md:grid-cols-12 md:gap-[13px] xl:mt-[38px] xl:gap-[30px] 4xl:auto-rows-[minmax(0,550px)]"
         >
           <div
+            v-for="(project, index) in activeTab?.projects"
+            :key="index"
             :class="
               cn(
-                'group relative overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]',
+                'group relative overflow-hidden  rounded-[25px] text-black md:col-span-5 md:rounded-[20px] xl:rounded-[50px]',
                 {
-                  'md:!col-span-12': activeTab?.projects.length === 3,
-                  'cursor-pointer': activeTab?.projects[0]?.link,
+                  'md:!col-span-7': checkIndexProject(index) && activeTab?.projects.length !== 3,
+                  'md:!col-span-12': activeTab?.projects.length === 3 && index === 0,
+                  'md:!col-span-6':
+                    activeTab?.projects.length === 3 && (index === 1 || index === 2),
+                  'cursor-pointer': project?.link,
                 }
               )
             "
           >
             <UiButton
-              v-if="activeTab?.projects[0]?.link"
+              :to="project?.link"
+              class="absolute left-0 top-0 flex size-full items-end justify-end bg-[linear-gradient(to_bottom,transparent_10%,#000000_100%)] px-[2rem] py-[1.5rem] opacity-0 duration-[0.5s] group-hover:opacity-100"
+            >
+              <div
+                class="flex translate-y-[150%] items-center gap-[10px] text-[18px] font-medium text-white duration-[0.5s] group-hover:translate-y-[0%] xl:gap-[15px] xl:text-[25px]"
+              >
+                <span>learn more</span>
+                <span
+                  class="flex size-[40px] items-center justify-center rounded-[50%] bg-white md:size-[50px] xl:size-[40px] 3xl:size-[85px]"
+                >
+                  <SvgoArrow class="!size-[50%] stroke-black stroke-[2px]" />
+                </span>
+              </div>
+            </UiButton>
+
+            <!-- <UiButton
+              v-if="project?.link"
               class="absolute left-0 top-0 z-10 size-full"
-              :to="activeTab?.projects[0]?.link"
-            />
+              :to="project?.link"
+            /> -->
             <img
-              class="size-full object-cover object-top duration-hover group-hover:scale-110"
+              class="size-full object-cover object-top"
               loading="lazy"
-              :src="activeTab?.projects[0].image"
-              :alt="activeTab?.projects[0]?.alt"
-            />
-          </div>
-          <div
-            :class="
-              cn(
-                'group relative overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]',
-                {
-                  'cursor-pointer': activeTab?.projects[1]?.link,
-                }
-              )
-            "
-          >
-            <UiButton
-              v-if="activeTab?.projects[1]?.link"
-              class="absolute left-0 top-0 z-10 size-full"
-              :to="activeTab?.projects[1]?.link"
-            />
-            <img
-              class="size-full object-cover object-top duration-hover group-hover:scale-110"
-              loading="lazy"
-              :src="activeTab?.projects[1].image"
-              :alt="activeTab?.projects[1]?.alt"
-            />
-          </div>
-          <div
-            :class="
-              cn(
-                'group  relative overflow-hidden rounded-[25px] md:col-span-7 md:rounded-[20px] xl:rounded-[50px]',
-                {
-                  'md:!col-span-5': activeTab?.projects.length === 3,
-                  'cursor-pointer': activeTab?.projects[2]?.link,
-                }
-              )
-            "
-          >
-            <UiButton
-              v-if="activeTab?.projects[2]?.link"
-              class="absolute left-0 top-0 z-10 size-full"
-              :to="activeTab?.projects[2]?.link"
-            />
-            <img
-              class="size-full object-cover object-top duration-hover group-hover:scale-110"
-              loading="lazy"
-              :src="activeTab?.projects[2].image"
-              :alt="activeTab?.projects[2]?.alt"
-            />
-          </div>
-          <div
-            v-if="activeTab?.projects[3]"
-            :class="
-              cn(
-                'group relative overflow-hidden rounded-[25px] md:col-span-5 md:rounded-[20px] xl:rounded-[50px]',
-                {
-                  'cursor-pointer': activeTab?.projects[3]?.link,
-                }
-              )
-            "
-          >
-            <UiButton
-              v-if="activeTab?.projects[3]?.link"
-              class="absolute left-0 top-0 z-10 size-full"
-              :to="activeTab?.projects[3]?.link"
-            />
-            <img
-              class="size-full object-cover duration-hover group-hover:scale-110"
-              loading="lazy"
-              :src="activeTab?.projects[3].image"
-              :alt="activeTab?.projects[3]?.alt"
+              :src="project.image"
+              :alt="project?.alt"
             />
           </div>
         </div>

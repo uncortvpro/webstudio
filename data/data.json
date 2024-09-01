@@ -1,5 +1,80 @@
 {
   "yearsOfExperience": 5,
+  "resentProjects": [
+    {
+      "id": 2,
+      "label": "Web-development",
+      "projects": [
+        {
+          "image": "/img/ukrainemart_2.png",
+          "link": "https://ukrainemart.com/",
+          "alt": "Ukrainemart - web development project"
+        },
+        {
+          "image": "/img/clickwerk.jpg",
+          "link": "https://clickwerk.eu/",
+          "alt": "Clickwerk web development project showcasing responsive design and modern UI"
+        },
+        {
+          "image": "/img/size_crm.png",
+          "link": "https://size-crm.com/",
+          "alt": "Size-crm project example demonstrating effective web development solutions"
+        },
+        {
+          "image": "/img/kuzka_shop.png",
+          "link": "",
+          "alt": "Product Development and Operations Setup"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Ui/ux design",
+      "projects": [
+        {
+          "image": "/img/LogicGov.png",
+          "link": "",
+          "alt": "UX/UI design mockup showcasing intuitive user interface"
+        },
+        {
+          "image": "/img/Enterprice_gpt.png",
+          "link": "",
+          "alt": "Interactive user experience design with modern layout"
+        },
+        {
+          "image": "/img/kwiga.png",
+          "link": "",
+          "alt": "High-fidelity prototype of e-commerce app with user-friendly navigation"
+        },
+        {
+          "image": "/img/CryptoEx.png",
+          "link": "",
+          "alt": "Modern web design with engaging user interface elements"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "presentation design",
+      "projects": [
+        {
+          "image": "/img/pres_1.png",
+          "link": "",
+          "alt": "Professional presentation design with modern slide layout"
+        },
+        {
+          "image": "/img/size_crm_2.png",
+          "link": "",
+          "alt": "Size crm visually engaging presentation slide featuring infographic"
+        },
+        {
+          "image": "/img/ukrainemart_2.png",
+          "link": "",
+          "alt": "Ukrainemart Presentation slide featuring a mix of text and graphics"
+        }
+      ]
+    }
+  ],
   "whyWe": [
     {
       "title": "Transparent working conditions.",

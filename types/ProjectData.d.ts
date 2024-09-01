@@ -7,4 +7,13 @@ declare interface ProjectData {
     title: string;
     description: string;
   }[];
+  resentProjects: {
+    id: number;
+    label: string;
+    projects: {
+      image: string;
+      link: string;
+      alt: string;
+    }[];
+  }[];
 }
