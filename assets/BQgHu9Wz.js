@@ -1,0 +1,1 @@
+import{N as e}from"./CIXHx4nR.js";import{m as t,G as n,H as r,I as s}from"./Cx797ydj.js";import"./j7rYbICd.js";const a={xmlns:"http://www.w3.org/2000/svg",fill:"none",viewBox:"0 0 10 6"};function m(c,o){return n(),r("svg",a,o[0]||(o[0]=[s("path",{d:"M9 5 5 1 1 5"},null,-1)]))}const u={render(){return t(e,{icon:{render:m},name:"ArrowTop"})}};export{u as default,m as render};
