@@ -32,8 +32,8 @@ export default <Partial<Config>>{
       '4xl': `${VAR.BREAKPOINTS_4XL}px`,
     },
     fontFamily: {
-      primary: ['poppins', 'sans-serif'],
-      secondary: ['orbitron', 'sans-serif'],
+      primary: ['montserrat', 'sans-serif'],
+      secondary: ['orbitron', 'montserrat', 'sans-serif'],
       logo: ['stick no bills', 'sans-serif'],
     },
     extend: {

@@ -18,7 +18,7 @@
         )
       "
     >
-      <template #title> news & updates </template>
+      <template #title> {{ $t('labels.newsUpdates') }} </template>
       <template #content>
         <div class="grid gap-[15px] md:grid-cols-3 xl:gap-[25px]">
           <CommonCardNews v-for="(item, index) in news" :key="index" :news="item" />

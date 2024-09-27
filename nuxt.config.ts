@@ -17,11 +17,34 @@ export default defineNuxtConfig({
     '@davestewart/nuxt-scrollbar',
     '@nuxt/image',
     'nuxt-delay-hydration',
+    '@nuxtjs/i18n',
   ],
   ssr: false,
   css: ['~/assets/css/fonts.css'],
   alias: {
     '@img': './assets/img',
+  },
+  i18n: {
+    vueI18n: './i18n/i18n.config.ts',
+    defaultLocale: 'en',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'selectedLanguage',
+      redirectOn: 'root',
+    },
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        iso: 'en-US',
+      },
+      {
+        code: 'ru',
+        name: 'Русский',
+        iso: 'ru-RU',
+      },
+    ],
   },
   swiper: {
     modules: [

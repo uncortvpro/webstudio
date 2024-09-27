@@ -1,0 +1,36 @@
+{
+  "labels": {
+    "services": "Услуги",
+    "portfolio": "Портфолио",
+    "contacts": "Контакты",
+    "yearsOfExperience": "лет опыта",
+    "successfulCases": "успешные проекты",
+    "professionals": "профессионалы",
+    "learnMore": "Узнать больше",
+    "newsUpdates": "новости и обновления",
+    "technologies": "Технологии",
+    "send": "Отправить"
+  },
+
+  "titles": {
+    "webAgency": "Веб-агентство Ocean Script",
+    "transformingIdeas": "Превращаем идеи в цифровые шедевры:",
+    "yourVision": "Ваше видение, наш код",
+    "goToServices": "Перейти к услугам",
+    "recentProjects": "Недавние проекты",
+    "whyWe": "Почему мы?",
+    "haveQuestion": "Есть вопрос?",
+    "letDiscussYourTasks": "Давайте обсудим ваши задачи."
+  },
+  "formContact": {
+    "header": "Давайте обсудим ваши задачи. Свяжитесь с нами сегодня!",
+    "placeholder": {
+      "name": "Ваше имя",
+      "phone": "Ваш номер телефона",
+      "email": "Ваш email",
+      "service": "Услуга, которая вас интересует",
+      "budget": "Ваш бюджет"
+    },
+    "thankYou": "Спасибо, мы свяжемся с вами!"
+  }
+}

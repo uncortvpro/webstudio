@@ -28,7 +28,7 @@
 <template>
   <div>
     <UiSection>
-      <template #title> technologies </template>
+      <template #title> {{ $t('labels.technologies') }} </template>
     </UiSection>
     <Vue3Marquee class="mf:mt-[45px] mt-[35px] xl:mt-[60px]">
       <img

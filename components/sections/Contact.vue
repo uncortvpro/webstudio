@@ -33,12 +33,12 @@
           <h3
             class="font-secondary text-[25px] font-semibold lowercase text-black md:text-[38px] xl:text-[35px] 3xl:text-[60px]"
           >
-            Have a question?
+            {{ $t('titles.haveQuestion') }}
           </h3>
           <p
             class="mt-[5px] text-[15px] lowercase text-black md:mt-[10px] md:text-[23px] xl:text-[25px] 3xl:text-[35px]"
           >
-            Let's discuss your tasks.
+            {{ $t('titles.letDiscussYourTasks') }}
           </p>
         </div>
         <CommonFormContact class="w-full self-center" />

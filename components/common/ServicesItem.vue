@@ -10,24 +10,24 @@
 
 <template>
   <div
-    class="custom_bg flex h-full flex-col justify-between rounded-[30px] px-[30px] py-[36px] md:rounded-[42px]"
+    class="custom_bg flex h-full flex-col justify-start rounded-[30px] px-[30px] py-[36px] md:rounded-[42px]"
   >
     <div class="flex items-center gap-[7px] md:gap-[10px]">
       <h3 class="text-[15px] font-medium lowercase text-black md:text-[23px] xl:text-[30px]">
-        {{ item.title }}
+        {{ useMultiLang(item, 'title') }}
       </h3>
     </div>
     <p
-      class="mt-[5px] font-primary text-[12px] leading-[150%] text-black md:text-[20px] xl:mt-[7px] xl:text-[22px]"
+      class="mt-[15px] font-primary text-[12px] leading-[150%] text-black md:text-[20px] xl:mt-[20px] xl:text-[22px]"
     >
-      {{ item.description }}
+      {{ useMultiLang(item, 'description') }}
     </p>
 
     <div
       class="mt-[15px] flex items-center justify-between gap-[10px] md:mt-[27px] xl:mt-[34px] 2xl:mt-[47px]"
     >
       <img class="max-w-[80px] flex-1" :src="item.icon" alt="" />
-      <UiButtonArrow class="shrink-0 self-center" @click="switchModalDetails(true)"
+      <UiButtonArrow class="shrink-0 self-center lowercase" @click="switchModalDetails(true)"
         >learn more</UiButtonArrow
       >
     </div>
@@ -42,12 +42,12 @@
       <img class="md:w-full md:max-w-[555px]" :src="useBaseUrl(item?.image)" />
       <div class="mt-[15px] lg:mt-0">
         <h3 class="text-[20px] uppercase text-black md:text-[30px] xl:text-[45px]">
-          {{ item.title }}
+          {{ useMultiLang(item, 'title') }}
         </h3>
         <p
           class="mt-[5px] text-[10px] leading-[130%] text-black md:mt-[10px] md:text-[14px] xl:mt-[20px] xl:text-[20px]"
         >
-          {{ item.allDescription }}
+          {{ useMultiLang(item, 'allDescription') }}
         </p>
       </div>
     </div>

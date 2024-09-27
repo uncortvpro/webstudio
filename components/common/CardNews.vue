@@ -22,7 +22,7 @@
       <h3
         class="mt-[15px] text-left text-[15px] text-black md:text-[18px] xl:mt-[20px] xl:text-[22px]"
       >
-        {{ news.title }}
+        {{ useMultiLang(news, 'title') }}
       </h3>
     </div>
     <UiButton
@@ -43,12 +43,12 @@
 
       <div class="mt-[15px] lg:mt-0">
         <h3 class="text-[20px] uppercase text-black md:text-[30px] xl:text-[45px]">
-          {{ news.title }}
+          {{ useMultiLang(news, 'title') }}
         </h3>
         <p
           class="mt-[5px] text-[10px] leading-[130%] text-black md:mt-[10px] md:text-[14px] xl:mt-[20px] xl:text-[20px]"
         >
-          {{ news.description }}
+          {{ useMultiLang(news, 'description') }}
         </p>
       </div>
     </div>

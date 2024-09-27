@@ -13,7 +13,7 @@
   // const messageSuccess = ref('');
   const isModalSuccess = ref(false);
 
-  const servicesOptions = computed(() => services.map((el) => el.title));
+  const servicesOptions = computed(() => services.map((el) => useMultiLang(el, 'title')));
 
   const message = computed(
     () =>
@@ -45,22 +45,31 @@
   <div
     class="max-w-[485px] rounded-[25px] px-[15px] py-[25px] md:px-[32px] md:py-[30px] xl:max-w-[800px] xl:rounded-[50px] xl:px-[92px] xl:py-[45px]"
   >
-    <UiModalSuccess v-model="isModalSuccess" :message="`Thank you, we'll be in touch!`" />
+    <UiModalSuccess v-model="isModalSuccess" :message="$t('form.thankYou')" />
     <form action="#" class="flex flex-col" @submit.prevent="sendMessage">
       <h5
         class="text-center font-secondary text-[18px] font-semibold lowercase text-black md:text-[23px] xl:text-[28px]"
       >
-        Let's discuss your tasks. Contact today!
+        {{ $t('formContact.header') }}
       </h5>
       <div class="mt-[20px] flex flex-col gap-[15px] md:mt-[25px] xl:mt-[44px] xl:gap-[20px]">
-        <UiInputPrimary v-model="inputs.name" required placeholder="Your name" />
-        <UiInputPrimary v-model="inputs.phone" placeholder="Your pnone number" />
-        <UiInputPrimary v-model="inputs.email" required placeholder="Your email" type="email" />
+        <UiInputPrimary
+          v-model="inputs.name"
+          required
+          :placeholder="$t('formContact.placeholder.name')"
+        />
+        <UiInputPrimary v-model="inputs.phone" :placeholder="$t('formContact.placeholder.phone')" />
+        <UiInputPrimary
+          v-model="inputs.email"
+          required
+          :placeholder="$t('formContact.placeholder.email')"
+          type="email"
+        />
         <UiSelect
           v-model="inputs.service"
           :currentValue="inputs.service"
           :options="servicesOptions"
-          placeholder="service you’re interested in"
+          :placeholder="$t('formContact.placeholder.service')"
         />
         <UiSelect
           v-model="inputs.budget"
@@ -69,14 +78,16 @@
             '$500 - $5,000',
             '$5,000 - $10,000',
             '$10,000 - $25,000',
-            '$25,000 - $50,000,',
+            '$25,000 - $50,000',
             'Over 50,000$',
           ]"
-          placeholder="your budget"
+          :placeholder="$t('formContact.placeholder.budget')"
         />
       </div>
-      <UiButtonPrimary type="submit" class="mt-[25px] self-center md:mt-[30px] xl:mt-[50px]"
-        >send</UiButtonPrimary
+      <UiButtonPrimary
+        type="submit"
+        class="mt-[25px] self-center lowercase md:mt-[30px] xl:mt-[50px]"
+        >{{ $t('labels.send') }}</UiButtonPrimary
       >
     </form>
   </div>

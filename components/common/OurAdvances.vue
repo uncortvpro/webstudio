@@ -9,19 +9,19 @@
         {{ yearsOfExperience }}+
       </p>
       <p class="mt-[10px] text-[10px] text-black md:text-[16px] xl:mt-[15px] xl:text-[20px]">
-        years of experience
+        {{ $t('labels.yearsOfExperience') }}
       </p>
     </div>
     <div>
       <p class="text-[45px] font-medium text-black md:text-[72px] 3xl:text-[100px]">100+</p>
       <p class="mt-[10px] text-[10px] text-black md:text-[16px] xl:mt-[15px] xl:text-[20px]">
-        successful cases
+        {{ $t('labels.successfulCases') }}
       </p>
     </div>
     <div>
       <p class="text-[45px] font-medium text-black md:text-[72px] 3xl:text-[100px]">8</p>
       <p class="mt-[10px] text-[10px] text-black md:text-[16px] xl:mt-[15px] xl:text-[20px]">
-        professionals
+        {{ $t('labels.professionals') }}
       </p>
     </div>
   </div>

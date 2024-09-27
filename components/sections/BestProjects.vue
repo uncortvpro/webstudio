@@ -1,28 +1,9 @@
 <script setup lang="ts">
-  // import { useElementVisibility } from '@vueuse/core';
-
   const tabs = [
-    // {
-    //   id: 1,
-    //   label: 'all projects',
-    //   projects: [
-    //     {
-    //       image: '/img/olimpia_crm.png',
-    //     },
-    //     {
-    //       image: '/img/olimpia_crm.png',
-    //     },
-    //     {
-    //       image: '/img/olimpia_crm.png',
-    //     },
-    //     {
-    //       image: '/img/olimpia_crm.png',
-    //     },
-    //   ],
-    // },
     {
       id: 2,
-      label: 'Web-development',
+      label_en: 'Web-development',
+      label_ru: 'Веб-разработка',
       projects: [
         {
           image: useBaseUrl('/img/ukrainemart_2.png'),
@@ -48,7 +29,8 @@
     },
     {
       id: 3,
-      label: 'Ui/ux design',
+      label_en: 'Ui/ux design',
+      label_ru: 'UI/UX дизайн',
       projects: [
         {
           image: useBaseUrl('/img/LogicGov.png'),
@@ -74,7 +56,8 @@
     },
     {
       id: 4,
-      label: 'presentation design',
+      label_en: 'Presentation design',
+      label_ru: 'Дизайн презентаций',
       projects: [
         {
           image: useBaseUrl('/img/pres_1.png'),
@@ -121,7 +104,7 @@
       class="duration_show_section relative animate-fade-up bg-[rgba(141,122,100,0.1)] py-[25px] md:py-[35px] xl:py-[44px]"
     >
       <UiSection class="relative" :ui="{ container: 'pb-0 xl:pb-[20px]' }">
-        <template #title> recent projects </template>
+        <template #title> {{ $t('titles.recentProjects') }} </template>
       </UiSection>
       <div class="mt-0 3xl:container">
         <Swiper
@@ -155,7 +138,7 @@
                 )
               "
               @click="changeTab(tab.id)"
-              >{{ tab.label }}</UiButton
+              >{{ useMultiLang(tab, 'label') }}</UiButton
             >
           </SwiperSlide>
         </Swiper>

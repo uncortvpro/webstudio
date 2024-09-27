@@ -2,131 +2,110 @@
   "yearsOfExperience": 5,
   "whyWe": [
     {
-      "title": "Transparent working conditions.",
-      "description": "Agreement with guarantees and obligations."
+      "title_en": "Transparent working conditions.",
+      "title_ru": "Прозрачные условия работы.",
+      "description_en": "Agreement with guarantees and obligations.",
+      "description_ru": "Соглашение с гарантиями и обязательствами."
     },
     {
-      "title": "Flexible payment system.",
-      "description": "70/30, 60/40, 50/50 per stage."
+      "title_en": "Flexible payment system.",
+      "title_ru": "Гибкая система оплаты.",
+      "description_en": "70/30, 60/40, 50/50 per stage.",
+      "description_ru": "70/30, 60/40, 50/50 за этап."
     },
     {
-      "title": "Constant feedback.",
-      "description": "In communication channels convenient for you."
+      "title_en": "Constant feedback.",
+      "title_ru": "Постоянная обратная связь.",
+      "description_en": "In communication channels convenient for you.",
+      "description_ru": "В удобных для вас каналах связи."
     },
     {
-      "title": "Reporting on work stages.",
-      "description": "See the results in real time."
+      "title_en": "Reporting on work stages.",
+      "title_ru": "Отчетность по этапам работы.",
+      "description_en": "See the results in real time.",
+      "description_ru": "Смотрите результаты в реальном времени."
     },
     {
-      "title": "Training to work with the site, technical. support.",
-      "description": "Consultations and recommendations after launch."
+      "title_en": "Training to work with the site, technical support.",
+      "title_ru": "Обучение работе с сайтом, техническая поддержка.",
+      "description_en": "Consultations and recommendations after launch.",
+      "description_ru": "Консультации и рекомендации после запуска."
     },
     {
-      "title": "Demo version admin. site panels.",
-      "description": "Test access to get acquainted with site management."
+      "title_en": "Demo version admin. site panels.",
+      "title_ru": "Демо-версия админ. панелей сайта.",
+      "description_en": "Test access to get acquainted with site management.",
+      "description_ru": "Тестовый доступ для ознакомления с управлением сайтом."
     },
     {
-      "title": "Maximum involvement in your business.",
-      "description": "Agreement with guarantees and obligations."
+      "title_en": "Maximum involvement in your business.",
+      "title_ru": "Максимальное вовлечение в ваш бизнес.",
+      "description_en": "Agreement with guarantees and obligations.",
+      "description_ru": "Соглашение с гарантиями и обязательствами."
     },
     {
-      "title": "Individual design and development.",
-      "description": "Clean and optimized code, responsive design for your target audience."
+      "title_en": "Individual design and development.",
+      "title_ru": "Индивидуальный дизайн и разработка.",
+      "description_en": "Clean and optimized code, responsive design for your target audience.",
+      "description_ru": "Чистый и оптимизированный код, адаптивный дизайн для вашей целевой аудитории."
     },
     {
-      "title": "SEO optimized code.",
-      "description": "Our sites are technically optimized for SEO promotion and meet the latest Google requirements."
+      "title_en": "SEO optimized code.",
+      "title_ru": "SEO-оптимизированный код.",
+      "description_en": "Our sites are technically optimized for SEO promotion and meet the latest Google requirements.",
+      "description_ru": "Наши сайты технически оптимизированы для SEO-продвижения и соответствуют последним требованиям Google."
     }
   ],
   "news": [
     {
-      "title": "Artificial Intelligence and Personalization: New Trends in eCommerce",
-      "description": "Artificial Intelligence (AI) continues to revolutionize the eCommerce landscape. In 2024, the focus is shifting toward using AI for personalizing the shopping experience. By applying machine learning technologies, online stores can offer users products and services that best match their interests and preferences. Analyzing data from previous purchases, viewed pages, and even the time of day, AI can predict user behavior and provide personalized recommendations in real-time. This not only increases conversions but also makes the shopping process more convenient and enjoyable for customers. Additionally, AI is actively used for optimizing logistics, inventory management, review processing, and demand forecasting, helping businesses operate more efficiently and offer customers better conditions.",
+      "title_en": "Artificial Intelligence and Personalization: New Trends in eCommerce",
+      "title_ru": "Искусственный интеллект и персонализация: новые тренды в электронной коммерции",
+      "description_en": "Artificial Intelligence (AI) continues to revolutionize the eCommerce landscape. In 2024, the focus is shifting toward using AI for personalizing the shopping experience. By applying machine learning technologies, online stores can offer users products and services that best match their interests and preferences. Analyzing data from previous purchases, viewed pages, and even the time of day, AI can predict user behavior and provide personalized recommendations in real-time. This not only increases conversions but also makes the shopping process more convenient and enjoyable for customers. Additionally, AI is actively used for optimizing logistics, inventory management, review processing, and demand forecasting, helping businesses operate more efficiently and offer customers better conditions.",
+      "description_ru": "Искусственный интеллект (ИИ) продолжает революционизировать сферу электронной коммерции. В 2024 году акцент смещается на использование ИИ для персонализации покупательского опыта. Применяя технологии машинного обучения, интернет-магазины могут предлагать пользователям товары и услуги, которые наилучшим образом соответствуют их интересам и предпочтениям. Анализируя данные из предыдущих покупок, просмотренных страниц и даже времени суток, ИИ может предсказывать поведение пользователей и предоставлять персонализированные рекомендации в реальном времени. Это не только увеличивает конверсии, но и делает процесс покупок более удобным и приятным для клиентов. Кроме того, ИИ активно используется для оптимизации логистики, управления запасами, обработки отзывов и прогнозирования спроса, помогая бизнесам работать более эффективно и предлагать клиентам лучшие условия.",
       "image": "/img/news1.png"
     },
     {
-      "title": "Microanimations in UX/UI: How Small Details Can Enhance Interfaces",
-      "description": "Microanimations are small yet significant elements that greatly improve the user experience on websites and mobile apps. In 2024, microanimations are becoming a key trend in UX/UI design. These subtle animations help users better understand interfaces, improving navigation and making interactions more intuitive. For example, an animation when clicking a button can confirm the successful completion of an action, and a slight effect when hovering over an element can indicate that it is interactive. Microanimations can also enhance the emotional connection with a product, making it more 'human' and engaging. Companies that implement microanimations in their products report improved user experience, increased engagement, and higher user satisfaction.",
+      "title_en": "Microanimations in UX/UI: How Small Details Can Enhance Interfaces",
+      "title_ru": "Микроанимации в UX/UI: как мелочи могут улучшить интерфейсы",
+      "description_en": "Microanimations are small yet significant elements that greatly improve the user experience on websites and mobile apps. In 2024, microanimations are becoming a key trend in UX/UI design. These subtle animations help users better understand interfaces, improving navigation and making interactions more intuitive. For example, an animation when clicking a button can confirm the successful completion of an action, and a slight effect when hovering over an element can indicate that it is interactive. Microanimations can also enhance the emotional connection with a product, making it more 'human' and engaging. Companies that implement microanimations in their products report improved user experience, increased engagement, and higher user satisfaction.",
+      "description_ru": "Микроанимации — это небольшие, но значимые элементы, которые значительно улучшают пользовательский опыт на веб-сайтах и мобильных приложениях. В 2024 году микроанимации становятся ключевым трендом в дизайне UX/UI. Эти тонкие анимации помогают пользователям лучше понимать интерфейсы, улучшая навигацию и делая взаимодействие более интуитивным. Например, анимация при нажатии кнопки может подтвердить успешное выполнение действия, а легкий эффект при наведении на элемент может указывать на его интерактивность. Микроанимации также могут улучшить эмоциональную связь с продуктом, делая его более 'человечным' и привлекательным. Компании, которые внедряют микроанимации в свои продукты, сообщают о улучшении пользовательского опыта, увеличении вовлеченности и повышении удовлетворенности пользователей.",
       "image": "/img/news2.jpeg"
     },
     {
-      "title": "SMM Trends: New Social Media Algorithms and Their Impact on Targeting",
-      "description": "Social media continues to evolve, with algorithms becoming more sophisticated and user engagement-oriented. In 2024, SMM professionals face new challenges and opportunities. The algorithms of platforms like Instagram, Facebook, and TikTok prioritize content that drives active audience engagement—likes, comments, and shares. This means brands must rethink their strategies, focusing on creating high-quality, interesting, and engaging content. Additionally, targeted advertising is becoming more precise thanks to improved analytics tools that allow a better understanding of users' interests and behavior. It’s crucial not only to target ads accurately but also to make them appealing and useful to the target audience.",
+      "title_en": "SMM Trends: New Social Media Algorithms and Their Impact on Targeting",
+      "title_ru": "Тренды SMM: новые алгоритмы социальных медиа и их влияние на таргетинг",
+      "description_en": "Social media continues to evolve, with algorithms becoming more sophisticated and user engagement-oriented. In 2024, SMM professionals face new challenges and opportunities. The algorithms of platforms like Instagram, Facebook, and TikTok prioritize content that drives active audience engagement—likes, comments, and shares. This means brands must rethink their strategies, focusing on creating high-quality, interesting, and engaging content. Additionally, targeted advertising is becoming more precise thanks to improved analytics tools that allow a better understanding of users' interests and behavior. It’s crucial not only to target ads accurately but also to make them appealing and useful to the target audience.",
+      "description_ru": "Социальные медиа продолжают развиваться, а алгоритмы становятся более сложными и ориентированными на вовлеченность пользователей. В 2024 году SMM-специалисты сталкиваются с новыми вызовами и возможностями. Алгоритмы таких платформ, как Instagram, Facebook и TikTok, приоритизируют контент, который вызывает активную вовлеченность аудитории — лайки, комментарии и репосты. Это означает, что брендам необходимо пересмотреть свои стратегии, сосредоточившись на создании качественного, интересного и вовлекающего контента. Кроме того, таргетированная реклама становится более точной благодаря улучшенным аналитическим инструментам, позволяющим лучше понять интересы и поведение пользователей. Важно не только точно нацеливать рекламу, но и делать её привлекательной и полезной для целевой аудитории.",
       "image": "/img/news3.jpg"
     }
   ],
   "services": [
     {
-      "title": "Web-Development",
-      "description": "Engaging and responsive websites for a strong online presence",
+      "title_en": "Web-Development",
+      "title_ru": "Веб-разработка",
+      "description_en": "Engaging and responsive websites for a strong online presence",
+      "description_ru": "Привлекательные и адаптивные веб-сайты для сильного онлайн-присутствия",
       "icon": "/img/car.svg",
-      "allDescription": "In a world where online presence plays a crucial role in business success, it's essential to have a website that not only captures attention but also converts visitors into customers. We specialize in creating high-quality websites that blend aesthetics, functionality, and cutting-edge technology. Our development process begins with a deep understanding of your business goals and target audience needs. We design unique, responsive layouts that look great on all devices — from smartphones to desktops. During development, we also focus on performance optimization and security, ensuring fast page loads and data protection. Your online platform will be integrated with modern analytics and marketing tools, allowing you to track success and make data-driven improvements.",
-      "image": "/img/web_development.jpg"
+      "allDescription_en": "In a world where online presence plays a crucial role in business success, it's essential to have a website that not only captures attention but also converts visitors into customers. We specialize in creating high-quality websites that blend aesthetics, functionality, and cutting-edge technology. Our development process begins with a deep understanding of your business goals and target audience needs. We design unique, responsive layouts that look great on all devices — from smartphones to desktops. During development, we also focus on performance optimization and security, ensuring fast page loads and data protection. Your online platform will be integrated with modern analytics and marketing tools, allowing you to track success and make data-driven improvements.",
+      "allDescription_ru": "В мире, где онлайн-присутствие играет решающую роль в успехе бизнеса, важно иметь сайт, который не только привлекает внимание, но и конвертирует посетителей в клиентов. Мы специализируемся на создании высококачественных веб-сайтов, которые сочетают в себе эстетику, функциональность и передовые технологии. Наш процесс разработки начинается с глубокого понимания ваших бизнес-целей и потребностей целевой аудитории. Мы разрабатываем уникальные, адаптивные макеты, которые отлично смотрятся на всех устройствах — от смартфонов до десктопов. В процессе разработки мы также уделяем внимание оптимизации производительности и безопасности, обеспечивая быструю загрузку страниц и защиту данных. Ваша онлайн-платформа будет интегрирована с современными инструментами аналитики и маркетинга, что позволит вам отслеживать успех и вносить изменения на основе данных."
     },
     {
-      "title": "UX/UI Design",
-      "description": "Intuitive and user-friendly interfaces for seamless user experiences",
-      "icon": "/img/web.svg",
-      "allDescription": "The success of a digital product largely depends on the quality of its interface. Our UX/UI designers create interfaces that combine attractiveness with ease of use. We start by conducting user research and behavior analysis to understand how users interact with products. This approach enables us to design interfaces that are intuitive and easily adaptable to different users' needs. We adhere to a minimalist design principle, focusing on making every interface element functional and conducive to achieving user goals. Our solutions not only enhance the user experience but also help businesses achieve higher conversions and retain customers. We also thoroughly test all designed interfaces to ensure they work flawlessly and meet user expectations.",
-      "image": "/img/Whats-the-Difference-Between-UX-Design-vs.-UI-Design_@3x-1-scaled.jpg"
+      "title_en": "Mobile-Development",
+      "title_ru": "Мобильная разработка",
+      "description_en": "Native and cross-platform mobile applications",
+      "description_ru": "Нативные и кроссплатформенные мобильные приложения",
+      "icon": "/img/phone.svg",
+      "allDescription_en": "With the growing demand for mobile applications, having a reliable and functional app is critical for business success. We offer mobile development services for both iOS and Android platforms, creating both native applications that leverage platform-specific features and cross-platform solutions that work seamlessly on multiple devices. Our team of experts ensures that each app is intuitive, fast, and user-friendly, focusing on providing an exceptional user experience. We work closely with our clients at every stage of development, from concept to design, implementation, and post-launch support. Additionally, we ensure the integration of analytics and monetization tools, allowing you to track user engagement and optimize app performance.",
+      "allDescription_ru": "С ростом спроса на мобильные приложения наличие надежного и функционального приложения критично для успеха бизнеса. Мы предлагаем услуги по разработке мобильных приложений для платформ iOS и Android, создавая как нативные приложения, которые используют специфические функции платформы, так и кроссплатформенные решения, которые без проблем работают на нескольких устройствах. Наша команда экспертов гарантирует, что каждое приложение интуитивно понятное, быстрое и удобное для пользователя, сосредоточившись на обеспечении исключительного пользовательского опыта. Мы тесно сотрудничаем с нашими клиентами на каждом этапе разработки — от концепции до дизайна, реализации и послезапусковой поддержки. Кроме того, мы обеспечиваем интеграцию инструментов аналитики и монетизации, позволяя вам отслеживать вовлеченность пользователей и оптимизировать производительность приложения."
     },
     {
-      "title": "AI-Based Solutions",
-      "description": "Innovative AI-driven technologies to enhance automation and decision-making processes",
-      "icon": "/img/Capa.svg",
-      "image": "/img/ai.jpg",
-      "allDescription": "Artificial intelligence (AI) is becoming an integral part of modern business processes, enabling task automation and improving decision-making quality. Our AI-based solutions are designed to increase your business's efficiency, reduce costs, and boost profits. We offer a wide range of services, from implementing simple automation algorithms to developing complex machine learning systems and big data analytics. Our experts will help you integrate AI into existing business processes or create new, more efficient approaches to data and operations management. With AI, you can quickly and accurately process large volumes of data, gain valuable insights, and respond promptly to market changes."
-    },
-    {
-      "title": "Product Development",
-      "description": "Strategic planning and implementation for successful product launches and operational efficiency",
-      "icon": "/img/Human.svg",
-      "image": "/img/product_dev.jpg",
-      "allDescription": "Product development is a complex process that requires deep analysis, planning, and coordination at all stages. We help companies navigate this path with minimal risk and maximum results. Our product development services cover all stages — from market research and concept creation to scaling and supporting the launched product. We start by immersing ourselves in your business, studying the target audience and the market in which you plan to operate. Then we develop a strategy that includes creating an MVP (minimum viable product), testing it, and gradually adding new features. Our team supports you at every stage, ensuring clear coordination, meeting deadlines, and staying within budget. As a result, you get a product that meets market needs and has all the chances for a successful launch and growth."
-    },
-    {
-      "title": "SMM & Target",
-      "description": "Effective social media management and targeted advertising to boost your online visibility",
-      "icon": "/img/car.svg",
-      "image": "/img/smm.webp",
-      "allDescription": "Success on social media requires more than just having active accounts; it requires a strategic approach to content creation and advertising campaigns. We offer comprehensive social media management and targeted advertising services to help your business attract attention and gain the trust of your target audience. Our approach includes developing a content strategy, creating unique visual and text materials, setting up targeted ads, and continuously monitoring results. We analyze data and adjust strategies to ensure maximum campaign effectiveness and increase ROI. Your online visibility will grow, and audience engagement and conversions will thrive thanks to our attention to detail and use of the latest analytics tools."
-    },
-    {
-      "title": "Presentation Design",
-      "description": "Crafting visually stunning presentations to elevate your message effectively",
-      "icon": "/img/Capa1.svg",
-      "image": "/img/presentation_design.webp",
-      "allDescription": "When it comes to creating a presentation, it's essential not only to convey information but also to do so in a bright and convincing way. Our team of designers specializes in creating professional presentations that help you stand out and effectively communicate your message to the audience. We develop unique templates, select stylish visual elements and graphics so that each presentation is not only informative but also memorable. Our presentations are ideal for various purposes — whether it's a demonstration to investors, a new product presentation, or employee training. We also offer services for creating animations and interactive elements that make your slides even more engaging and impactful. With our help, your presentation will become a powerful tool for achieving your goals."
-    }
-  ],
-  "reviews": [
-    {
-      "name": "Clickwerk",
-      "review": "I turned to Ocean Script to create a large project with extensive functionality in the admin panel and web shop. Ocean Script accomplished this task perfectly, showing a high level of professionalism and attention to detail. All my requests and wishes were taken into account, even the smallest and, at first glance, capricious. The work was done with high quality! I recommend Ocean Script as a reliable and responsible specialist who copes with tasks of any complexity."
-    },
-    {
-      "name": "Clickwerk",
-      "review": "Ocean Script demonstrated outstanding web design skills by creating a top-notch design for our web store. Their creativity and attention to detail led to a result that exceeded our expectations!"
-    },
-    {
-      "name": "Natalia",
-      "review": "Working with Ocean Script was a game-changer for our business. Their web development expertise brought our online presence to a whole new level. The team's dedication and creativity truly set them apart."
-    },
-    {
-      "name": "Dmitri",
-      "review": "Impressed with the seamless collaboration and top-notch results delivered by Ocean Script. Their web solutions are not just functional, but they also have an eye for design that adds a touch of elegance to the user experience. Highly recommended!"
-    },
-    {
-      "name": "Andrei",
-      "review": "Ocean Script turned our vision into reality with their impeccable web development skills. The team was responsive, professional, and went above and beyond to ensure our website exceeded expectations. A reliable partner for any online venture."
-    },
-    {
-      "name": "Aleksander",
-      "review": "Partnering with Ocean Script was a breeze from start to finish. Their expertise in web development is matched by their commitment to client satisfaction. Our website is now a powerful tool thanks to their innovative approach and attention to detail."
-    },
-    {
-      "name": "Jaroslav",
-      "review": "Thrilled with the results of our collaboration with Ocean Script. Their web development team demonstrated a deep understanding of our industry, translating complex ideas into a user-friendly website. Their professionalism and commitment to quality are commendable."
+      "title_en": "SEO Optimization",
+      "title_ru": "SEO-оптимизация",
+      "description_en": "Maximizing visibility in search engines",
+      "description_ru": "Максимизация видимости в поисковых системах",
+      "icon": "/img/search.svg",
+      "allDescription_en": "SEO is one of the key components of successful online business. Without proper optimization, your website can be lost among competitors in search engine results. Our SEO services include a comprehensive audit of your website, identifying weaknesses, and developing a customized optimization strategy. We focus on both on-page and off-page optimization, including improving site speed, mobile compatibility, and link building. Our team follows the latest trends and search engine requirements to ensure that your website consistently ranks high in search results, attracting more visitors and converting them into customers. We provide regular reports on results and further optimization recommendations to ensure continuous improvement.",
+      "allDescription_ru": "SEO является одним из ключевых компонентов успешного онлайн-бизнеса. Без надлежащей оптимизации ваш сайт может затеряться среди конкурентов в результатах поисковых систем. Наши услуги по SEO включают комплексный аудит вашего сайта, выявление слабых мест и разработку индивидуальной стратегии оптимизации. Мы сосредотачиваемся как на внутренней, так и на внешней оптимизации, включая улучшение скорости сайта, мобильной совместимости и построение ссылок. Наша команда следит за последними трендами и требованиями поисковых систем, чтобы ваш сайт постоянно занимал высокие позиции в результатах поиска, привлекая больше посетителей и превращая их в клиентов. Мы предоставляем регулярные отчеты о результатах и рекомендации по дальнейшей оптимизации для обеспечения постоянного улучшения."
     }
   ]
 }

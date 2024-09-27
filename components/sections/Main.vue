@@ -17,29 +17,34 @@
           <p
             class="animate_print_text mt-[15px] text-[12px] text-black md:mt-[30px] md:text-[20px] 4xl:mt-[50px] 4xl:text-[25px]"
           >
-            Web agency Ocean Script
+            {{ $t('titles.webAgency') }}
           </p>
           <h2
             class="mt-[10px] text-[30px] font-semibold leading-[120%] text-black md:mt-[15px] md:text-[50px] 3xl:text-[75px] 4xl:mt-[20px]"
           >
-            Transforming Ideas into Digital Marvels:
+            {{ $t('titles.transformingIdeas') }}
           </h2>
           <h2
             class="font-secondary text-[30px] font-semibold leading-[120%] text-[#8D7A64] md:text-[50px] 4xl:text-[75px]"
           >
-            Your Vision, Our Code
+            {{ $t('titles.yourVision') }}
           </h2>
           <UiButtonPrimary
             to="#services"
             class="mt-[20px] inline-block rounded px-4 py-2 font-bold text-white md:mt-[40px] 3xl:mt-[35px]"
           >
-            go to services
+            {{ $t('titles.goToServices') }}
           </UiButtonPrimary>
         </div>
         <div
           class="mt-[35px] flex flex-col items-center self-center sm:mt-[-5%] lg:col-span-2 lg:mt-auto"
         >
-          <img class="max-w-[400px] lg:max-w-[538px]" src="/img/iPhone15MockupNew.webp" alt="Ocean script" rel="preload" />
+          <img
+            class="max-w-[400px] lg:max-w-[538px]"
+            src="/img/iPhone15MockupNew.webp"
+            alt="Ocean Script"
+            rel="preload"
+          />
         </div>
         <CommonOurAdvances
           :class="

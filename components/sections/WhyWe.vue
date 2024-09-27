@@ -15,7 +15,7 @@
         })
       "
     >
-      <template #title> why we? </template>
+      <template #title> {{ $t('titles.whyWe') }} </template>
       <template #content>
         <div
           class="mt-[30px] grid gap-[20px] md:mt-[50px] md:gap-[22px] lg:flex-row lg:items-center lg:justify-between lg:gap-[59px] xl:grid-cols-3 2xl:gap-[89px]"

@@ -1,4 +1,6 @@
 declare interface Review {
-  name: string;
-  review: string;
+  name_en: string;
+  name_ru: string;
+  review_en: string;
+  review_ru: string;
 }

@@ -1,0 +1,36 @@
+{
+  "labels": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contacts": "Contacts",
+    "yearsOfExperience": "years of experience",
+    "successfulCases": "successful cases",
+    "professionals": "professionals",
+    "learnMore": "Learn more",
+    "newsUpdates": "news & updates",
+    "technologies": "Technologies",
+    "send": "Send"
+  },
+
+  "titles": {
+    "webAgency": "Web agency Ocean Script",
+    "transformingIdeas": "Transforming Ideas into Digital Marvels:",
+    "yourVision": "Your Vision, Our Code",
+    "goToServices": "Go to services",
+    "recentProjects": "Recent Projects",
+    "whyWe": "why we?",
+    "haveQuestion": "Have a question?",
+    "letDiscussYourTasks": "Let's discuss your tasks."
+  },
+  "formContact": {
+    "header": "Let's discuss your tasks. Contact today!",
+    "placeholder": {
+      "name": "Your name",
+      "phone": "Your phone number",
+      "email": "Your email",
+      "service": "Service you’re interested in",
+      "budget": "Your budget"
+    },
+    "thankYou": "Thank you, we'll be in touch!"
+  }
+}
