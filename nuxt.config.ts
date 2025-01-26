@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
   ],
   ssr: false,
-  css: ['~/assets/css/fonts.css'],
+  css: ['~/assets/css/main.scss'],
   alias: {
     '@img': './assets/img',
   },
