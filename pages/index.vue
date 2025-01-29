@@ -28,7 +28,7 @@ useHead({
         Stay connected with us through our social media channels.
       </div>
       <div class="social">
-        <a href="mailto:oceanscript.general@gmail.com" aria-label="Email">
+        <a href="mailto:info@ocean-script.com" aria-label="Email">
           <i class="fas fa-envelope"></i>
         </a>
         <a href="https://www.instagram.com/oceanscript.web" target="_blank" aria-label="Instagram">
