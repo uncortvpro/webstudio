@@ -1,0 +1,1 @@
+import{_ as t,x as n,A as o,v as c,a5 as _}from"./19l7XzjW.js";/* empty css        */const a={};function r(s,f){const e=_;return c(),n("div",null,[o(e)])}const p=t(a,[["render",r]]);export{p as default};
