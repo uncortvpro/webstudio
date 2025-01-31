@@ -38,7 +38,7 @@ useHead({
           <i class="fab fa-telegram"></i>
         </a>
       </div>
-      <div class="launch-date">Launch Date: February 1, 2024</div>
+      <div class="launch-date">Launch Date: February 7, 2024</div>
     </div>
   </div>
 </template>
